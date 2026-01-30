@@ -1,5 +1,5 @@
 "use client";
-import { LogoLarge } from "./brand";
+import { Logo } from "./brand";
 import Link from "next/link";
 import Container from "@/components/container";
 import NewsletterForm from "@/components/newsletter-form";
@@ -26,7 +26,7 @@ const Footer = ({ variant = "light" }: FooterProps) => {
         className={`container grid grid-cols-2 md:grid-cols-7 gap-10 pt-20`}
       >
         <div className="col-span-2 w-full space-y-5">
-          <LogoLarge />
+          <Logo />
           <p className={`text-base ${textColor}`}>
             Code Space is a nonprofit community fiscally sponsored by The Hack
             Foundation Nonprofit EIN: 81-2908499.

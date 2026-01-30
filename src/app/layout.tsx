@@ -70,9 +70,40 @@ const graphikSans = localFont({
   ],
 });
 
+const interDisplay = localFont({
+  src: [
+    {
+      path: "../fonts/inter-display/InterDisplay-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-display/InterDisplay-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-display/InterDisplay-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-display/InterDisplay-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-display/InterDisplay-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--inter-display",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
+    process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org",
   ),
   title: {
     default:
@@ -275,10 +306,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${graphikSans.className} ${duplicateSans.variable} antialiased lenis lenis-smooth`}
+        className={`${interDisplay.className} ${duplicateSans.variable} antialiased lenis lenis-smooth`}
       >
         <SmoothScroll />
-        <NavBar />
         <ScrollToTop />
         {children}
         <Footer />

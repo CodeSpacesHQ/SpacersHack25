@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { LogoLarge } from "./brand";
+import { Logo } from "./brand";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { links } from "@/data";
@@ -42,37 +42,38 @@ const NavBar = () => {
       </div> */}
 
       {/* NavBar */}
-      <Container className="container flex items-center justify-between py-8 md:pb-8 md:pt-4">
-        <Link href={"/"}>
-          <LogoLarge />
-        </Link>
-
-        <ul className="lg:flex flex-row items-center gap-x-5 hidden text-sm uppercase">
-          {links.map((link) => (
-            <li
-              key={link.name}
-              className={cn({
-                "text-primary": pathname.startsWith(link.href),
-              })}
-            >
-              <Link className="hover:text-primary" href={link.href}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-          <Button
-            size={"sm"}
-            className="hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-3 !h-fit"
+      <Container className="container flex items-center justify-between py-8">
+        <div className="flex items-center gap-12 w-full">
+          <Link href={"/"}>
+            <Logo />
+          </Link>
+          <ul className="lg:flex flex-row items-center gap-x-5 hidden text-sm">
+            {links.map((link) => (
+              <li key={link.name}>
+                <Link
+                  className="subtitle hover:text-secondary"
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Button
+          size={"sm"}
+          variant="secondary"
+          className="hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-2.5 !h-fit"
+        >
+          <a
+            href="https://forms.gle/hhuLVupnm2F1AGa96"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a
-              href="https://forms.gle/hhuLVupnm2F1AGa96"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              SPONSOR EVENT
-            </a>
-          </Button>
-        </ul>
+            SPONSOR EVENT
+          </a>
+        </Button>
+
         <Sheet open={open} onOpenChange={setOpen}>
           <VisuallyHidden.Root>
             <SheetTitle>Menu</SheetTitle>
@@ -90,7 +91,7 @@ const NavBar = () => {
             <div className="flex flex-col h-full bg-white">
               <div className="flex justify-between items-center p-4">
                 <Link href="/" onClick={() => setOpen(false)}>
-                  <LogoLarge />
+                  <Logo />
                 </Link>
                 <Button
                   size="icon-sm"
@@ -111,7 +112,7 @@ const NavBar = () => {
                           "block text-2xl hover:text-primary transition-colors uppercase",
                           pathname.startsWith(link.href)
                             ? "text-primary"
-                            : "text-black"
+                            : "text-black",
                         )}
                       >
                         {link.name}

@@ -14,7 +14,7 @@
     --primary: 241 56% 59%;
     --primary-dark: 240 47% 9%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 220 14.3% 95.9%;
+    --secondary: 296, 94%, 40%;
     --secondary-foreground: 220.9 39.3% 11%;
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
@@ -69,7 +69,7 @@
   }
 
   .subtitle {
-    @apply text-[#989898];
+    @apply text-white/60;
   }
 }
 
