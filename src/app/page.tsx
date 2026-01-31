@@ -37,7 +37,7 @@ export default function Home() {
               </div>
               <div className="mt-16">
                 <p className="text-sm sm:text-base md:text-xl text-white max-w-xl">
-                  JUL 25TH - 30TH, 2026
+                  AUG 21ST - 29TH 2026
                 </p>
                 <p className="text-sm sm:text-base md:text-xl text-secondary max-w-xl mt-1 font-medium">
                   SPACER'S HACK CONF 2026

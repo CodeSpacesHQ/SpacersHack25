@@ -3,25 +3,25 @@ import Container from "../container";
 export default function Schedule() {
   const scheduleItems = [
     {
-      time: "20th to 30th Aug, 2025 • 09:00 - 17:00",
+      time: "20th to 30th Aug, 2026 • 09:00 - 17:00",
       title: "Hybrid Hackathon",
       description:
         "This is a week-long collaborative event where developers and people in tech across Africa and beyond come together to build innovative solutions to local & global problems.",
     },
     {
-      time: "31st August, 2025 • 09:00 - 17:00",
+      time: "31st August, 2026 • 09:00 - 17:00",
       title: "Panel Session",
       description:
         "This session brings together industry experts, thought leaders, and professionals to discuss relevant topics, trends, and challenges in the tech industry.",
     },
     {
-      time: "31st August, 2025 • 09:00 - 17:00",
+      time: "31st August, 2026 • 09:00 - 17:00",
       title: "Keynote Session",
       description:
         "These sessions feature keynote presentations from industry experts and general talks by thought leaders in their respective industries.",
     },
     {
-      time: "31st August, 2025 • 09:00 - 17:00",
+      time: "31st August, 2026 • 09:00 - 17:00",
       title: "Product Showcase",
       description:
         "This showcase is a session where participants can present their ideas, prototypes or demos of disruptive solutions addressing a wide range of domain problems in their communities.",
@@ -29,42 +29,81 @@ export default function Schedule() {
   ];
 
   return (
-    <Container className="py-24">
-      <div className="flex justify-between">
-        <div className="text-2xl font-medium">
-          <h3>{"Spacer's Hack Conf"}</h3>
-          <h3 className="text-primary">2025 Event Schedule</h3>
+    <div className="w-full bg-[#16181E] py-24 text-white">
+      <Container>
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-10">
+          <div className="text-[30px] leading-tight font-normal font-inter-display">
+            <h3>Spacer’s Hack Conf</h3>
+            <h3>2026 Event Schedule</h3>
+          </div>
+
+          <div className="flex items-center gap-8 lg:gap-[50px]">
+            <div className="flex flex-col gap-0 items-start">
+              <div className="flex items-center gap-3">
+                <div className="h-[25px] w-[3px] bg-white/60 hidden lg:block"></div>
+                <span className="text-white/60 text-[22px] font-medium font-inter-display leading-none">
+                  24th August, 2026
+                </span>
+              </div>
+              <span className="uppercase text-[25px] font-medium text-white font-inter-display leading-none mt-2">
+                Hackathon Starts
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-0 items-start">
+              <div className="flex items-center gap-3">
+                <div className="h-[25px] w-[3px] bg-white/60 hidden lg:block"></div>
+                <span className="text-white/60 text-[22px] font-medium font-inter-display leading-none">
+                  28th August, 2026
+                </span>
+              </div>
+              <span className="uppercase text-[25px] font-medium text-white font-inter-display leading-none mt-2">
+                Hackathon Ends
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-0 items-start">
+              <div className="flex items-center gap-3">
+                <div className="h-[25px] w-[3px] bg-white/60 hidden lg:block"></div>
+                <span className="text-white/60 text-[22px] font-medium font-inter-display leading-none">
+                  29th August, 2026
+                </span>
+              </div>
+              <span className="uppercase text-[25px] font-medium text-white font-inter-display leading-none mt-2">
+                Conference Day
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div className="flex items-center gap-x-12">
-          <div className="">
-            <h3>{"20th August, 2025"}</h3>
-            <h3 className="text-primary text-2xl uppercase">
-              Hackathon Starts
-            </h3>
-          </div>
-          <div className="">
-            <h3>{"30th August, 2025"}</h3>
-            <h3 className="text-primary text-2xl uppercase">Hackathon Ends</h3>
-          </div>
-          <div className="">
-            <h3>{"31st August, 2025"}</h3>
-            <h3 className="text-primary text-2xl uppercase">Conference Day</h3>
-          </div>
+        <div className="flex flex-col gap-16">
+          {scheduleItems.map((item, idx) => (
+            <div
+              key={idx}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"
+            >
+              <div className="lg:col-span-4 flex items-center gap-4">
+                <div className="w-[3px] h-[25px] bg-white"></div>
+                <span className="text-[20px] font-normal font-inter-display text-white">
+                  {item.time}
+                </span>
+              </div>
+
+              <div className="lg:col-span-4 flex justify-start lg:justify-center">
+                <h3 className="text-[24px] uppercase font-medium text-white font-inter-display leading-[140%]">
+                  {item.title}
+                </h3>
+              </div>
+
+              <div className="lg:col-span-4 flex justify-start lg:justify-end">
+                <p className="text-left w-full max-w-[422px] text-white text-[16px] font-normal leading-[140%] font-inter-display">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="flex flex-col gap-y-5 mt-20 bg-[#F0F0FB] w-full rounded-2xl p-2.5">
-        {scheduleItems.map((item, idx) => (
-          <div
-            key={idx}
-            className="bg-primary text-white rounded-lg p-8 flex justify-between items-center"
-          >
-            <p>{item.time}</p>
-            <h3 className="text-xl uppercase">{item.title}</h3>
-            <p className="max-w-96 text-sm">{item.description}</p>
-          </div>
-        ))}
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }

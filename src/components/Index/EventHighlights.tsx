@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Container from "../container";
 import { Button } from "../ui/button";
@@ -6,11 +7,17 @@ export default function EventHighlights() {
   return (
     <Container className="gap-12 flex items-center my-24">
       <div className="flex flex-col gap-12 flex-1">
-        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
-        <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
+        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image1.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image3.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
       </div>
       <div className="flex flex-col gap-12 flex-1">
-        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
+        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image8.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
         <Button
           variant="secondary"
           size="sm"
@@ -39,12 +46,18 @@ export default function EventHighlights() {
             <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
           </svg>
         </Button>
-        <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
+        <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image7.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
       </div>
 
       <div className="flex flex-col gap-12 flex-1">
-        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
-        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E]" />
+        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image9.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
+          <img src="/images/image6.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+        </div>
       </div>
     </Container>
   );

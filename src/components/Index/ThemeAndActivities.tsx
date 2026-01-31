@@ -1,3 +1,4 @@
+
 import Container from "../container";
 
 export default function ThemeAndActivities() {
@@ -5,7 +6,7 @@ export default function ThemeAndActivities() {
     {
       title: (
         <>
-          {"Exciting"} <br /> {"Technical Talks"}
+          Exciting <br /> Technical Talks
         </>
       ),
       description:
@@ -114,14 +115,15 @@ export default function ThemeAndActivities() {
       ),
     },
   ];
+
   return (
     <div className="py-24">
       <Container>
         <div className="flex flex-col justify-start items-start">
-          <h3 className="justify-center text-white text-2xl font-medium uppercase leading-loose mb-2">
+          <h3 className="justify-center text-white text-lg font-medium uppercase leading-loose mb-2 font-duplicate-sans">
             Theme - Beyond boundaries; Building for tomorrow.
           </h3>
-          <div className="justify-center text-white text-2xl font-normal">
+          <div className="justify-center text-white/80 text-3xl font-normal leading-normal font-duplicate-sans">
             The aim of the conference is to provide an avenue for techies to
             learn, unlearn, and relearn. The business of technology is evolving,
             and it is important to always stay on top of the game. The theme for
@@ -132,7 +134,7 @@ export default function ThemeAndActivities() {
         </div>
 
         <div className="mt-16">
-          <h5 className="justify-center text-white text-xl font-semibold uppercase leading-loose mb-8">
+          <h5 className="justify-center text-white text-xl font-bold uppercase leading-loose mb-[70px]">
             Look forward to...
           </h5>
 
@@ -143,16 +145,19 @@ export default function ThemeAndActivities() {
                   <div className="">
                     {item.icon}
 
-                    <h1 className="text-5xl text-white font-light mt-6 leading-16">
+                    <h1 className="text-[56px] text-white font-light mt-6 uppercase leading-none">
                       {item.title}
                     </h1>
                   </div>
 
-                  <p className="text-right max-w-96 w-full text-white">
+                  <p className="text-left max-w-[468px] w-full text-white font-light text-[22px] leading-[140%]">
                     {item.description}
                   </p>
                 </div>
-                <div className="w-full bg-white/20 mt-8 h-px" />
+                <div
+                  className="w-full mt-8 h-[0.5px]"
+                  style={{ backgroundColor: "rgba(255, 255, 255, 0.35)" }}
+                />
               </div>
             ))}
           </div>

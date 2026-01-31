@@ -4,7 +4,6 @@ import "./globals.css";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
 import SmoothScroll from "@/components/smoothscroll";
-import ScrollToTop from "@/components/scroll-to-top";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -153,9 +152,8 @@ export const metadata: Metadata = {
     siteName: "Code Space",
     images: [
       {
-        url: `${
-          process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
-        }/images/icon.png`,
+        url: `${process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
+          }/images/icon.png`,
         width: 1200,
         height: 630,
         alt: "Code Space - Africa's Premier Gen Z Tech Community",
@@ -169,8 +167,7 @@ export const metadata: Metadata = {
     description:
       "Code Space is Africa's leading Gen Z tech community, empowering young tech talents through mentorship, events, and networking. Join our vibrant ecosystem of innovators, developers, and tech enthusiasts.",
     images: [
-      `${
-        process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
+      `${process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
       }/images/icon.png`,
     ],
     creator: "@codespace",
@@ -309,7 +306,7 @@ export default function RootLayout({
         className={`${interDisplay.className} ${duplicateSans.variable} antialiased lenis lenis-smooth`}
       >
         <SmoothScroll />
-        <ScrollToTop />
+
         {children}
         <Footer />
         <Analytics />
