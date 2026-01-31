@@ -1,4 +1,52 @@
 import Container from "../container";
+import SpeakerCard from "./SpeakerCard";
+
+const hosts = [
+  {
+    name: "Shalom Adebola",
+    role: "Co-Host/Product Designer",
+    image: "/images/hosts/shalom-adebola.png",
+    bio: "Shalom is a Product Manager at Code Space and a Product Designer at Kora. She is passionate about building products that solve real-world problems.",
+    socials: {
+      twitter: "#",
+      linkedin: "#"
+    }
+  },
+  {
+    name: "Oluwatoyin Akande",
+    role: "Co-Host/Digital Media Specialist",
+    image: "/images/hosts/oluwatoyin-akande.png",
+    bio: "Oluwatoyin is a Digital Media Specialist at Code Space. She is passionate about creating engaging content and building communities.",
+    socials: {
+      twitter: "#",
+      linkedin: "#"
+    }
+  },
+];
+
+const keynoteSpeakers = [
+  {
+    name: "Odun Eweniyi",
+    role: "Cofounder/COO, Piggytech",
+    image: "/images/speakers/odunayo-eweniyi.png",
+    bio: "Odunayo Eweniyi is the co-founder and Chief Operations Officer of Piggytech, the company behind Piggyvest, Nigeria’s largest digital savings and micro-investment platform with over 6 million users.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+  {
+    name: "Peace Itimi",
+    role: "Host Founders Connect",
+    image: "/images/speakers/peace-itimi.png",
+    bio: "Peace Itimi is a Growth Marketer and YouTuber. She is the Host of 'Founders Connect'.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+  {
+    name: "Ire Aderinokun",
+    role: "Limited Partner, Angel Investor",
+    image: "/images/speakers/ire-aderinokun.png",
+    bio: "Ire Aderinokun is an investor, entrepreneur, and software engineer with a decade of experience building and backing technology ventures in frontier markets.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+];
 
 export default function Speakers() {
   return (
@@ -13,19 +61,8 @@ export default function Speakers() {
             Prestigious Hosts
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {[0, 1, 2].map((i) => (
-              <div key={`hosts-${i}`} className="bg-[#16181E] p-2">
-                <div className="h-80 bg-[#111319] w-full"></div>
-
-                <div className="text-center text-white my-6">
-                  <h3 className="font-medium text-[24px] mb-2 font-inter-display">
-                    Amarachi Johnson-Ubah
-                  </h3>
-                  <p className="text-[22px] font-normal text-white font-inter-display leading-[130%]">
-                    Community Manager
-                  </p>
-                </div>
-              </div>
+            {hosts.map((host, i) => (
+              <SpeakerCard key={`host-${i}`} {...host} />
             ))}
           </div>
         </div>
@@ -35,19 +72,11 @@ export default function Speakers() {
             Keynote Speakers
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {[0, 1, 2].map((i) => (
-              <div key={`keynote-${i}`} className="bg-[#16181E] p-2">
-                <div className="h-80 bg-[#111319] w-full"></div>
-
-                <div className="text-center text-white my-6">
-                  <h3 className="font-medium text-[24px] mb-2 font-inter-display">
-                    Amarachi Johnson-Ubah
-                  </h3>
-                  <p className="text-[22px] font-normal text-white font-inter-display leading-[130%]">
-                    Community Manager
-                  </p>
-                </div>
-              </div>
+            {keynoteSpeakers.map((speaker, i) => (
+              <SpeakerCard
+                key={`keynote-${i}`}
+                {...speaker}
+              />
             ))}
           </div>
         </div>
@@ -58,18 +87,12 @@ export default function Speakers() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {[0, 1, 2].map((i) => (
-              <div key={`panelists-${i}`} className="bg-[#16181E] p-2">
-                <div className="h-80 bg-[#111319] w-full"></div>
-
-                <div className="text-center text-white my-6">
-                  <h3 className="font-medium text-[24px] mb-2 font-inter-display">
-                    Amarachi Johnson-Ubah
-                  </h3>
-                  <p className="text-[22px] font-normal text-white font-inter-display leading-[130%]">
-                    Community Manager
-                  </p>
-                </div>
-              </div>
+              <SpeakerCard
+                key={`panelists-${i}`}
+                name="Amarachi Johnson-Ubah"
+                role="Community Manager"
+                bio="Detailed bio coming soon..."
+              />
             ))}
           </div>
         </div>
@@ -80,18 +103,12 @@ export default function Speakers() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {[0, 1, 2].map((i) => (
-              <div key={`speakers-${i}`} className="bg-[#16181E] p-2">
-                <div className="h-80 bg-[#111319] w-full"></div>
-
-                <div className="text-center text-white my-6">
-                  <h3 className="font-medium text-[24px] mb-2 font-inter-display">
-                    Amarachi Johnson-Ubah
-                  </h3>
-                  <p className="text-[22px] font-normal text-white font-inter-display leading-[130%]">
-                    Community Manager
-                  </p>
-                </div>
-              </div>
+              <SpeakerCard
+                key={`speakers-${i}`}
+                name="Amarachi Johnson-Ubah"
+                role="Community Manager"
+                bio="Detailed bio coming soon..."
+              />
             ))}
           </div>
         </div>

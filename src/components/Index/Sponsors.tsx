@@ -1,15 +1,57 @@
 import Container from "../container";
-import Image from "next/image";
+import SponsorCard from "./SponsorCard";
 
 export default function Sponsors() {
     const sponsors = [
-        { name: "AWS", logo: "/images/sponsors/aws.png" },
-        { name: "Google", logo: "/images/sponsors/google.webp" },
-        { name: "JetBrains", logo: "/images/sponsors/jetbrains.png" },
-        { name: "Kora", logo: "/images/sponsors/kora.png" },
-        { name: "Paystack", logo: "/images/sponsors/paystack.png" },
-        { name: "TerraHaptix", logo: "/images/sponsors/terrahaptix.webp" },
-        { name: "Wix Studio", logo: "/images/sponsors/wix-studio.webp" },
+        {
+            name: "AWS",
+            logo: "/images/sponsors/aws.png",
+            tag: "Cloud Partner",
+            description: "Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud platform.",
+            website: "https://aws.amazon.com"
+        },
+        {
+            name: "Google",
+            logo: "/images/sponsors/google.webp",
+            tag: "Tech Giant",
+            description: "Google's mission is to organize the world's information and make it universally accessible and useful.",
+            website: "https://about.google"
+        },
+        {
+            name: "JetBrains",
+            logo: "/images/sponsors/jetbrains.png",
+            tag: "Tooling Partner",
+            description: "Essential tools for software developers and teams, including IntelliJ IDEA, PyCharm, and more.",
+            website: "https://www.jetbrains.com"
+        },
+        {
+            name: "Kora",
+            logo: "/images/sponsors/kora.png",
+            tag: "Payment Partner",
+            description: "Kora is a payment infrastructure for Africa, enabling businesses to accept payments and settle funds.",
+            website: "https://korapay.com"
+        },
+        {
+            name: "Paystack",
+            logo: "/images/sponsors/paystack.png",
+            tag: "Payment Partner",
+            description: "Paystack helps businesses in Africa get paid by anyone, anywhere in the world.",
+            website: "https://paystack.com"
+        },
+        {
+            name: "TerraHaptix",
+            logo: "/images/sponsors/terrahaptix.webp",
+            tag: "Hardware Partner",
+            description: "TerraHaptix is building the future of autonomous systems and robotics in Africa.",
+            website: "https://terrahaptix.com"
+        },
+        {
+            name: "Wix Studio",
+            logo: "/images/sponsors/wix-studio.webp",
+            tag: "Web Partner",
+            description: "Wix Studio is the ultimate web creation platform for agencies and freelancers.",
+            website: "https://www.wix.com/studio"
+        },
     ];
 
     return (
@@ -20,19 +62,9 @@ export default function Sponsors() {
                         EVENT SPONSORS
                     </h3>
 
-                    <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 w-full">
                         {sponsors.map((sponsor, index) => (
-                            <div
-                                key={index}
-                                className="relative h-12 w-32 md:h-16 md:w-40 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                            >
-                                <Image
-                                    src={sponsor.logo}
-                                    alt={sponsor.name}
-                                    fill
-                                    className="object-contain"
-                                />
-                            </div>
+                            <SponsorCard key={index} {...sponsor} />
                         ))}
                     </div>
                 </div>
