@@ -21,7 +21,7 @@ export default function Ticket() {
           </div>
         </div>
         <div className="bg-[#2C2E33]/30 py-3 w-full text-center text-white mt-10">
-          <p>JUL 25TH - 30TH, 2026</p>
+          <p>AUG 21ST - 29TH 2026</p>
         </div>
 
         <div className="px-11 mt-10">

@@ -210,14 +210,16 @@ export const links = [
 export const quick_links = [
   { name: "About Us", href: "/about-us" },
   { name: "Donate", href: "/donate" },
-  { name: "Brand Guideline", href: "/brand-guidelines" },
-  { name: "Privacy & Terms", href: "/privacy-policy" },
-  { name: "Press", href: "/press" },
+  { name: "Community", href: "/community" },
+  { name: "Contact us", href: "/contact-us" },
+  { name: "FAQs", href: "/#faq" },
 ];
 
 export const other_links = [
-  { name: "Ambassador", href: "/ambassador-program" },
-  { name: "Press", href: "/press" },
+  { name: "Brand Guidelines", href: "/brand-guidelines" },
+  { name: "Ambassador Program", href: "/ambassador-program" },
+  { name: "Partner with us", href: "/partner" },
+  { name: "Press Feature", href: "/press" },
 ];
 
 export const socials = [
