@@ -62,7 +62,7 @@ export default function Home() {
             <div className="mt-1 flex items-center text-white/90 text-[20px] gap-[30px]">
               <p>1,200 attendees</p>
               <p>40 projects built</p>
-              <p>15 sponsors</p>
+              <p>16 sponsors</p>
             </div>
           </div>
         </Container>
