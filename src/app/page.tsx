@@ -1,8 +1,10 @@
 import Container from "@/components/container";
 import Countdown from "@/components/countdown";
 import EventHighlights from "@/components/Index/EventHighlights";
+import FAQ from "@/components/Index/FAQ";
 import Schedule from "@/components/Index/Schedule";
 import Speakers from "@/components/Index/Speakers";
+import Sponsors from "@/components/Index/Sponsors";
 import ThemeAndActivities from "@/components/Index/ThemeAndActivities";
 import NavBar from "@/components/nav-bar";
 import { Button } from "@/components/ui/button";
@@ -74,6 +76,8 @@ export default function Home() {
       <ThemeAndActivities />
       <Schedule />
       <Speakers />
+      <Sponsors />
+      <FAQ />
     </>
   );
 }
