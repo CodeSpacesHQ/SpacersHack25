@@ -35,8 +35,6 @@ export default function SpeakerCard({ name, role, image, bio, socials }: Speaker
                         src={image}
                         alt={name}
                         fill
-                        quality={90}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover object-top"
                     />
                 ) : null}
