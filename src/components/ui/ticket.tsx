@@ -3,80 +3,17 @@ import { Button } from "./button";
 
 export default function Ticket() {
   return (
-    <div className="relative max-w-md w-full">
-      {/* Top perforated edge */}
-      <div className="absolute -top-14 left-0 right-0 flex w-full -space-x-px">
-        {Array.from({ length: 10 }).map((_, i) => (
-          <div
-            key={`top-${i}`}
-            className="h-full w-full aspect-square bg-white rounded-full transform translate-y-1/2"
-          />
-        ))}
-      </div>
+    <div className="max-w-md relative flex items-center flex-col mx-auto">
+      <div className="absolute top-2 h-[250px] w-[69px] bg-gradient-to-b from-white/0 to-white/2 border-x-[0.5] border-white/2.5 z-1 backdrop-blur-[50px]"></div>
+      <div className="relative border-[0.5] border-white/6 w-full mx-auto rounded-[36px] bg-white/2 py-5 mt-[206.5px]">
+        <div className="w-36 h-8 border-[0.4] border-white/10 rounded-full mx-auto bg-[#0F1117]"></div>
 
-      {/* Ticket body */}
-      <div className="bg-primary py-10 rounded-2xl h-[500px] flex flex-col justify-between">
-        <div>
-          <div className="px-5">
-            <p className="mb-4 text-white text-lg uppercase">
-              {"Get Your Ticket to"}
-              <br />
-              {"Spacer's Hack Conf 2025"}
-            </p>
-          </div>
-          <svg
-            width={500}
-            height={2}
-            viewBox="0 0 500 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 1H500"
-              stroke="white"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray="6 6"
-            />
-          </svg>
-
-          <div className="px-6 mt-6">
-            <p className="text-white text-lg uppercase mb-2">
-              Early bird ticket
-            </p>
-            <p className="text-white text-5xl font-medium uppercase">₦30,000</p>
-          </div>
-        </div>
-
-        <div className="px-6 flex flex-col w-full text-sm">
-          <p className="mb-2 text-lg text-[#DEDEF6]">
-            What your ticket includes:
-          </p>
-
-          <ul className="text-white space-y-2">
-            <li>Access to all talks and panel sessions</li>
-            <li>Hands-on Workshops and demos</li>
-            <li>And more!!</li>
-          </ul>
-
-          <Button
-            variant="white"
-            className=" ml-auto mt-4 !pl-6 text-primary text-sm"
-            size="sm"
-          >
-            <span>Purchase Ticket</span> <ChevronRight size={24} />
-          </Button>
-        </div>
-      </div>
-
-      {/* Bottom perforated edge */}
-      <div className="absolute -bottom-14 left-0 right-0 flex w-full -space-x-px">
-        {Array.from({ length: 10 }).map((_, i) => (
-          <div
-            key={`bottom-${i}`}
-            className="h-full w-full aspect-square bg-white rounded-full transform -translate-y-1/2"
-          />
-        ))}
+        <h2 className="font-bold text-5xl uppercase text-center text-white mt-8">
+          {"Spacer’s Hack Conference"}
+        </h2>
+        <h2 className="text-5xl uppercase text-center text-primary font-black">
+          2026
+        </h2>
       </div>
     </div>
   );
