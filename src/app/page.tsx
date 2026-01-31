@@ -16,7 +16,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="relative overflow-x-hidden">
-      <div className="absolute left-1/2 -translate-x-1/2 -top-96 rounded-full blur-[250px] h-[1600px] w-[1600px] bg-[#4F46E5]/35 pointer-events-none -z-10" />
+      <div className="absolute left-0 right-0 -top-96 rounded-full blur-[250px] h-[1600px] w-[1600px] bg-[#4F46E5]/35 pointer-events-none -z-10" />
 
       <div className="w-full relative bg-[url('/background.png')] flex flex-col min-h-screen bg-cover bg-center bg-no-repeat">
         <NavBar />

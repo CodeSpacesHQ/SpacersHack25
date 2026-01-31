@@ -42,7 +42,7 @@ const NavBar = () => {
       </div> */}
 
       {/* NavBar */}
-      <Container className="container flex items-center justify-between py-8">
+      <Container className="container flex items-center justify-between py-8 z-1">
         <div className="flex items-center gap-12 w-full">
           <Link href={"/"}>
             <Logo />
