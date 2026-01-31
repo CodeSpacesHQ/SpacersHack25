@@ -10,7 +10,7 @@ export default function Mandate() {
         viewBox="0 0 1510 794"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-96"
+        className="absolute top-96 mx-auto left-0 right-0"
       >
         <mask
           id="path-1-outside-1_1633_5681"

@@ -1,6 +1,3 @@
-import { ChevronRight } from "lucide-react";
-import { Button } from "./button";
-
 export default function Ticket() {
   return (
     <div className="max-w-xl relative flex items-center flex-col mx-auto">
