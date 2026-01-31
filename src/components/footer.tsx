@@ -21,7 +21,7 @@ const Footer = ({ variant = "light" }: FooterProps) => {
     : "hover:text-primary";
 
   return (
-    <div className={bgColor}>
+    <div>
       <Container
         className={`container grid grid-cols-2 md:grid-cols-7 gap-10 pt-20`}
       >

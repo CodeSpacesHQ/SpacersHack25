@@ -115,7 +115,7 @@ export default function ThemeAndActivities() {
     },
   ];
   return (
-    <div className="bg-[#0C0C21] py-24">
+    <div className="py-24">
       <Container>
         <div className="flex flex-col justify-start items-start">
           <h3 className="justify-center text-white text-2xl font-medium uppercase leading-loose mb-2">

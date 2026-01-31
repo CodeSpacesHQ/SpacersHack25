@@ -2,7 +2,7 @@ import Container from "../container";
 
 export default function Speakers() {
   return (
-    <div className="w-full bg-[#F3FAF5] py-20">
+    <div className="w-full py-20">
       <Container>
         <h3 className="font-medium text-xl text-[#55B76F] uppercase">
           MEET OUR SPEAKERS FOR SPACERS HACK 2025
