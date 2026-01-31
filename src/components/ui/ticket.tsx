@@ -4,8 +4,8 @@ import { Button } from "./button";
 export default function Ticket() {
   return (
     <div className="max-w-xl relative flex items-center flex-col mx-auto">
-      <div className="absolute top-2 h-[250px] w-[69px] bg-gradient-to-b from-white/0 to-white/2 border-x-[0.5] border-white/2.5 z-1 backdrop-blur-[50px]"></div>
-      <div className="relative border-[0.5] border-white/6 w-full mx-auto rounded-[36px] bg-white/2 py-7 mt-[199px]">
+      <div className="absolute top-2 h-[250px] w-20 bg-gradient-to-b from-white/0 to-white/2 border-x-[0.5] border-white/2.5 z-1 backdrop-blur-[50px]"></div>
+      <div className="backdrop-blur-3xl relative border-[0.5] border-white/6 w-full mx-auto rounded-[36px] bg-white/2 py-7 mt-[199px]">
         <div className="w-36 h-8 border-[0.4] border-white/10 rounded-full mx-auto bg-[#0F1117]"></div>
 
         <div className="px-[50px]">
@@ -27,17 +27,17 @@ export default function Ticket() {
           <p>JUL 25TH - 30TH, 2026</p>
         </div>
 
-        <div className="px-[50px] mt-10">
+        <div className="px-11 mt-10">
           <h3 className="text-2xl text-white">
             {"GET YOUR TICKET TO"}
             <br />
             {"SPACER'S HACK CONF 2026"}
           </h3>
-
-          <div className="mt-10">
-            <p className="text-lg text-white/50 uppercase">Early Bird Ticket</p>
-            <p className="text-white text-[42px] font-medium">₦30,000</p>
-          </div>
+        </div>
+        <div className="mt-10 h-[0.5px] bg-white/10" />
+        <div className="mt-10 px-11">
+          <p className="text-lg text-white/50 uppercase">Early Bird Ticket</p>
+          <p className="text-white text-[42px] font-medium">₦30,000</p>
         </div>
         <div className="px-8 mt-8">
           <button className="uppercase bg-[#4F46E5] relative w-full h-14 rounded-xl text-white group">
