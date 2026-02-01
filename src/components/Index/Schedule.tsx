@@ -29,9 +29,9 @@ export default function Schedule() {
   ];
 
   return (
-    <div className="w-full bg-[#16181E] py-10 lg:py-24 text-white">
+    <div className="w-full bg-[#16181E] py-24 text-white">
       <Container>
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 lg:mb-24 gap-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-10">
           <div className="text-[30px] leading-tight font-normal font-inter-display">
             <h3>Spacer’s Hack Conf</h3>
             <h3>2025 Event Schedule</h3>

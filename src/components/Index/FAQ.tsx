@@ -9,7 +9,7 @@ const items = [
     {
         question: "When and where will the hackathon take place?",
         answer:
-            "The hackathon will take place from August 20th to 30th, 2026, at The Zone Tech Park, Lagos, Nigeria. The final conference day will be held on August 31st, featuring talks, demos, and networking sessions.",
+            "The hackathon will take place from August 20th to 30th, 2024, at The Zone Tech Park, Lagos, Nigeria. The final conference day will be held on August 31st, featuring talks, demos, and networking sessions.",
     },
     {
         question: "How can I register for the hackathon?",
@@ -66,10 +66,10 @@ export default function FAQ() {
                         <Accordion.Item
                             key={index}
                             value={`item-${index}`}
-                            className="bg-[#16181E] rounded-[16px] overflow-hidden data-[state=open]:ring-1 data-[state=open]:ring-white/10 transition-all duration-300"
+                            className="bg-[#16181E] rounded-[16px] overflow-hidden transition-all duration-300"
                         >
-                            <Accordion.Header className="flex">
-                                <Accordion.Trigger className="flex flex-1 items-center justify-between p-6 w-full text-left group">
+                            <Accordion.Header className="flex p-2">
+                                <Accordion.Trigger className="flex flex-1 items-center justify-between p-4 px-6 w-full text-left group bg-white/5 rounded-[12px] hover:bg-white/10 transition-all data-[state=open]:bg-white/5">
                                     <span className="text-white font-inter-display text-[20px] font-normal leading-normal">
                                         {item.question}
                                     </span>
@@ -79,9 +79,9 @@ export default function FAQ() {
                                 </Accordion.Trigger>
                             </Accordion.Header>
                             <Accordion.Content className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-                                <div className="px-6 pb-6 pt-0">
+                                <div className="px-8 pb-6 pt-2">
                                     <p className="text-[#989898] font-inter-display text-[16px] leading-[150%] max-w-[90%]">
-                                        {item.answer}
+                                        {item.answer.replace("2026", "2024")}
                                     </p>
                                 </div>
                             </Accordion.Content>
