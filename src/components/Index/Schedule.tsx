@@ -3,7 +3,7 @@ import Container from "../container";
 export default function Schedule() {
   const scheduleItems = [
     {
-      time: "20th to 30th Aug, 2026 • 09:00 - 17:00",
+      time: "21st to 27th Aug, 2026 • 09:00 - 17:00",
       title: "Hybrid Hackathon",
       description:
         "This is a week-long collaborative event where developers and people in tech across Africa and beyond come together to build innovative solutions to local & global problems.",
