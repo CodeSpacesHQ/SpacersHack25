@@ -118,7 +118,7 @@ export default function ThemeAndActivities() {
   ];
 
   return (
-    <div className="py-24">
+    <div className="py-8 lg:py-24">
       <Container>
         <div className="flex flex-col justify-start items-start relative">
           <Image
@@ -126,9 +126,9 @@ export default function ThemeAndActivities() {
             alt="lamp"
             width={70}
             height={70}
-            className="absolute right-6 top-11 lg:right-[-30px] lg:top-[-80px] w-[35px] h-[35px] lg:w-[70px] lg:h-[70px] rotate-[9.9deg]"
+            className="absolute right-2 top-9 lg:right-[-30px] lg:top-[-80px] w-[48px] h-[48px] lg:w-[70px] lg:h-[70px] rotate-[9.9deg]"
           />
-          <h3 className="text-white text-[20px] font-bold uppercase leading-[130%] mb-[30px] font-duplicate-sans max-w-[302px] lg:max-w-none">
+          <h3 className="text-white text-[20px] font-bold uppercase leading-[130%] mb-[30px] font-duplicate-sans w-[302px] lg:w-auto lg:max-w-none">
             Theme - Beyond boundaries; Building for tomorrow.
           </h3>
           <div className="text-white/80 text-[16px] lg:text-3xl font-normal leading-[150%] lg:leading-normal font-duplicate-sans">

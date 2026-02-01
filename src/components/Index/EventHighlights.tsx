@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export default function EventHighlights() {
   return (
-    <Container className="my-24">
+    <Container className="my-12 lg:my-24">
       {/* Desktop Layout */}
       <div className="hidden lg:flex gap-12 items-center">
         <div className="flex flex-col gap-12 flex-1">
@@ -22,8 +22,7 @@ export default function EventHighlights() {
           </div>
           <Button
             variant="secondary"
-            size="sm"
-            className="bg-[#F5F5F5] hover:bg-[#F5F5F5]/90 text-black !pl-1.5 w-fit mx-auto uppercase rounded-full"
+            className="bg-white hover:bg-white/90 text-black !pl-1.5 w-fit mx-auto uppercase rounded-full h-[48px] px-6"
           >
             <span className="bg-white rounded-full p-2 flex flex-col items-center justify-center">
               <svg
@@ -68,26 +67,26 @@ export default function EventHighlights() {
         <div className="grid grid-cols-2 gap-4 items-start">
           {/* Left Column - Offset Down */}
           <div className="flex flex-col gap-4 mt-12">
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image1.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image8.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image9.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
           </div>
 
           {/* Right Column - Starts Top */}
           <div className="flex flex-col gap-4">
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image3.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image7.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
-            <div className="w-full h-[164px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[6px] border-r-[6px] border-t-[6px] border-b-[25px] border-[#16181E] relative overflow-hidden">
+            <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
               <img src="/images/image6.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
             </div>
           </div>
@@ -96,8 +95,7 @@ export default function EventHighlights() {
         <div className="flex justify-center">
           <Button
             variant="secondary"
-            size="sm"
-            className="bg-[#F5F5F5] hover:bg-[#F5F5F5]/90 text-black !pl-1.5 w-fit mx-auto uppercase rounded-full"
+            className="bg-white hover:bg-white/90 text-black !pl-1.5 w-fit mx-auto uppercase rounded-full h-[48px] px-6"
           >
             <span className="bg-white rounded-full p-2 flex flex-col items-center justify-center">
               <svg
