@@ -69,18 +69,18 @@ export default function FAQ() {
                             className="bg-[#16181E] rounded-[16px] overflow-hidden transition-all duration-300"
                         >
                             <Accordion.Header className="flex p-2">
-                                <Accordion.Trigger className="flex flex-1 items-center justify-between p-3 px-4 py-3 lg:p-4 lg:px-6 lg:py-5 w-full text-left group bg-white/5 rounded-[12px] hover:bg-white/10 transition-all data-[state=open]:bg-white/5">
-                                    <span className="text-white font-inter-display text-[14px] lg:text-[22px] font-normal leading-normal">
+                                <Accordion.Trigger className="flex flex-1 items-center justify-between p-4 px-6 py-5 w-full text-left group bg-white/5 rounded-[12px] hover:bg-white/10 transition-all data-[state=open]:bg-white/5">
+                                    <span className="text-white font-inter-display text-[18px] sm:text-[22px] font-normal leading-normal">
                                         {item.question}
                                     </span>
                                     <div className="text-white/60 group-hover:text-white transition-colors">
-                                        <ChevronDown className="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                                        <ChevronDown className="w-6 h-6 transition-transform duration-300 group-data-[state=open]:rotate-180" />
                                     </div>
                                 </Accordion.Trigger>
                             </Accordion.Header>
                             <Accordion.Content className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-                                <div className="px-5 pb-5 pt-3 lg:px-8 lg:pb-6 lg:pt-4">
-                                    <p className="text-white font-inter-display text-[13px] lg:text-[20px] font-normal leading-[140%] lg:leading-[130%] max-w-full">
+                                <div className="px-8 pb-6 pt-4">
+                                    <p className="text-white font-inter-display text-[16px] sm:text-[20px] font-normal leading-[130%] max-w-full">
                                         {item.answer.replace("2026", "2024")}
                                     </p>
                                 </div>
