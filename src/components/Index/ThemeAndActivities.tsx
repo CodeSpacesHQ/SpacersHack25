@@ -1,5 +1,6 @@
 
 import Container from "../container";
+import Image from "next/image";
 
 export default function ThemeAndActivities() {
   const items = [
@@ -119,11 +120,18 @@ export default function ThemeAndActivities() {
   return (
     <div className="py-24">
       <Container>
-        <div className="flex flex-col justify-start items-start">
-          <h3 className="justify-center text-white text-lg font-medium uppercase leading-loose mb-2 font-duplicate-sans">
+        <div className="flex flex-col justify-start items-start relative">
+          <Image
+            src="/lamp.svg"
+            alt="lamp"
+            width={70}
+            height={70}
+            className="absolute right-6 top-11 lg:right-[-30px] lg:top-[-80px] w-[35px] h-[35px] lg:w-[70px] lg:h-[70px] rotate-[9.9deg]"
+          />
+          <h3 className="text-white text-[20px] font-bold uppercase leading-[130%] mb-[30px] font-duplicate-sans max-w-[302px] lg:max-w-none">
             Theme - Beyond boundaries; Building for tomorrow.
           </h3>
-          <div className="justify-center text-white/80 text-3xl font-normal leading-normal font-duplicate-sans">
+          <div className="text-white/80 text-[16px] lg:text-3xl font-normal leading-[150%] lg:leading-normal font-duplicate-sans">
             The aim of the conference is to provide an avenue for techies to
             learn, unlearn, and relearn. The business of technology is evolving,
             and it is important to always stay on top of the game. The theme for
@@ -138,19 +146,19 @@ export default function ThemeAndActivities() {
             Look forward to...
           </h5>
 
-          <div className="flex flex-col space-y-28">
+          <div className="flex flex-col space-y-16 lg:space-y-28">
             {items.map((item, index) => (
               <div className="flex flex-col" key={index}>
-                <div className="flex items-end w-full justify-between">
+                <div className="flex flex-col lg:flex-row items-start lg:items-end w-full justify-between gap-6 lg:gap-0">
                   <div className="">
                     {item.icon}
 
-                    <h1 className="text-[56px] text-white font-light mt-6 uppercase leading-none">
+                    <h1 className="text-[24px] lg:text-[56px] text-white font-light mt-4 lg:mt-6 uppercase leading-none font-inter-display">
                       {item.title}
                     </h1>
                   </div>
 
-                  <p className="text-left max-w-[468px] w-full text-white font-light text-[22px] leading-[140%]">
+                  <p className="text-left max-w-full lg:max-w-[468px] w-full text-white font-light text-[16px] lg:text-[22px] leading-[140%] font-inter-display">
                     {item.description}
                   </p>
                 </div>
