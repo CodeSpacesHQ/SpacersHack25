@@ -82,9 +82,23 @@ const NavBar = () => {
             <Button
               size="icon-sm"
               variant="ghost"
-              className="lg:hidden bg-primary hover:bg-primary/95 hover:text-white text-white"
+              className="lg:hidden hover:bg-transparent p-0 group"
             >
-              <MenuIcon size={24} />
+              <div className="wp-block-group mobile-menu-open has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+                <figure className="wp-block-image size-full is-resized m-0 inline-block">
+                  <div className="relative w-[40px] h-[36px]">
+                    {/* Back Layer (Shadow) - White */}
+                    <div className="absolute inset-0 translate-x-[4px] translate-y-[4px] bg-white border-2 border-black rounded-[6px]" />
+
+                    {/* Front Layer - Purple */}
+                    <div className="relative w-full h-full bg-[#bb06c6] border-2 border-black rounded-[6px] flex flex-col items-center justify-center gap-[4px] group-active:translate-x-[2px] group-active:translate-y-[2px] transition-transform">
+                      <span className="w-[20px] h-[3px] bg-white rounded-full" />
+                      <span className="w-[20px] h-[3px] bg-white rounded-full" />
+                      <span className="w-[20px] h-[3px] bg-white rounded-full" />
+                    </div>
+                  </div>
+                </figure>
+              </div>
             </Button>
           </SheetTrigger>
           <SheetContent side="top" className="w-full h-[100dvh] border-0 p-0">
