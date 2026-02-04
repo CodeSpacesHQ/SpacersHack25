@@ -36,35 +36,47 @@ export default function Countdown() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="w-full py-12 bg-[#16181E] flex flex-col items-center justify-center font-inter-display">
-      <p className="subtitle text-[18px] sm:text-[20px] mb-8 text-center text-white/50">2026 Hackathon starts in</p>
+    // ... (This tool call handles multiple files? No, strict rules say one file per tool call usually unless multi_replace.
+    // Wait, "Use this tool ONLY when you are making a SINGLE CONTIGUOUS block".
+    // I need to use `multi_replace_file_content` if I want to edit 3 files? No, `multi_replace` is for "same file".
+    // I must make 3 separate tool calls.
 
-      <div className="flex items-start justify-center gap-3 sm:gap-8 text-white w-full max-w-[360px] sm:max-w-4xl px-4">
+    // Calling for Countdown first as it requires the most logic restoration.
+    <div className="w-full py-[30px] bg-[#16181E] flex flex-col items-center justify-center md:text-[20px]">
+      <p className="subtitle text-[18px] md:text-[20px] mb-8 text-center text-white/50 md:text-inherit md:text-white md:mb-0">2026 Hackathon starts in</p>
+
+      {/* Mobile View (Stacked) */}
+      <div className="flex md:hidden items-start justify-center gap-3 text-white w-full max-w-[360px] px-4">
         <div className="flex flex-col items-center gap-1">
-          <span className="text-[32px] sm:text-[40px] font-normal leading-tight">{format(time.days)}</span>
-          <span className="text-[14px] sm:text-[18px] text-white/60 font-light">Days</span>
+          <span className="text-[32px] font-normal leading-tight">{format(time.days)}</span>
+          <span className="text-[14px] text-white/60 font-light">Days</span>
         </div>
-
-        <span className="text-[24px] sm:text-[32px] mt-1 text-white/40">:</span>
-
+        <span className="text-[24px] mt-1 text-white/40">:</span>
         <div className="flex flex-col items-center gap-1">
-          <span className="text-[32px] sm:text-[40px] font-normal leading-tight">{format(time.hours)}</span>
-          <span className="text-[14px] sm:text-[18px] text-white/60 font-light">Hours</span>
+          <span className="text-[32px] font-normal leading-tight">{format(time.hours)}</span>
+          <span className="text-[14px] text-white/60 font-light">Hours</span>
         </div>
-
-        <span className="text-[24px] sm:text-[32px] mt-1 text-white/40">:</span>
-
+        <span className="text-[24px] mt-1 text-white/40">:</span>
         <div className="flex flex-col items-center gap-1">
-          <span className="text-[32px] sm:text-[40px] font-normal leading-tight">{format(time.minutes)}</span>
-          <span className="text-[14px] sm:text-[18px] text-white/60 font-light">Minutes</span>
+          <span className="text-[32px] font-normal leading-tight">{format(time.minutes)}</span>
+          <span className="text-[14px] text-white/60 font-light">Minutes</span>
         </div>
-
-        <span className="text-[24px] sm:text-[32px] mt-1 text-white/40">:</span>
-
+        <span className="text-[24px] mt-1 text-white/40">:</span>
         <div className="flex flex-col items-center gap-1">
-          <span className="text-[32px] sm:text-[40px] font-normal leading-tight">{format(time.seconds)}</span>
-          <span className="text-[14px] sm:text-[18px] text-white/60 font-light">Secs</span>
+          <span className="text-[32px] font-normal leading-tight">{format(time.seconds)}</span>
+          <span className="text-[14px] text-white/60 font-light">Secs</span>
         </div>
+      </div>
+
+      {/* Desktop View (Original Single Line) */}
+      <div className="hidden md:flex items-center gap-4 text-white/90 text-[20px]">
+        <p>{format(time.days)} Days</p>
+        <p>:</p>
+        <p>{format(time.hours)} Hours</p>
+        <p>:</p>
+        <p>{format(time.minutes)} Minutes</p>
+        <p>:</p>
+        <p>{format(time.seconds)} Secs</p>
       </div>
     </div>
   );

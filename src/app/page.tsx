@@ -60,7 +60,7 @@ export default function Home() {
               alt="Background"
               width={1146}
               height={859}
-              className="z-0 select-none mt-0 lg:mt-auto w-[170%] -ml-[35%] max-w-none sm:w-[60%] sm:ml-auto sm:max-w-full lg:w-[1146px] lg:absolute lg:bottom-0 lg:right-0 relative pointer-events-none"
+              className="z-0 select-none mt-0 md:mt-10 lg:mt-auto w-[170%] -ml-[35%] max-w-none sm:w-[60%] sm:ml-auto sm:max-w-full lg:w-[1146px] lg:absolute lg:bottom-0 lg:right-0 relative pointer-events-none"
             />
           </Container>
         </div>

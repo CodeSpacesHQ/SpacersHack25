@@ -46,19 +46,20 @@ export default function Mandate() {
       </svg>
 
       <Container className="py-20">
+// Mandate.tsx update
         <div className="max-w-5xl flex flex-col">
-          <h3 className="text-[16px] md:text-lg text-white uppercase mb-3 font-inter-display font-medium">
+          <h3 className="text-[16px] md:text-lg text-white uppercase mb-3">
             Code Space Hackathon 2026
           </h3>
 
-          <h2 className="subtitle text-[20px] md:text-3xl leading-[150%] font-inter-display">
+          <h2 className="subtitle text-[20px] md:text-3xl leading-[150%]">
             Build bold ideas, collaborate with top talent, and ship real
             solutions at Code Space Hackathon 2026, a high-energy experience
             where innovation meets execution through hacking, mentorship, and
             live product demos.
           </h2>
 
-          <p className="text-[18px] md:text-2xl text-white mt-6 font-inter-display">
+          <p className="text-[18px] md:text-2xl text-white mt-6">
             For developers, designers, founders & builders.
           </p>
         </div>
