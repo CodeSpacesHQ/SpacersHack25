@@ -17,7 +17,7 @@ export default function Sponsors() {
             <Container>
                 <div className="flex flex-col items-center">
                     <h3 className="font-medium text-[30px] text-[#989898] uppercase font-inter-display text-center mb-12">
-                        EVENT SPONSORS
+                        2025 SPONSORS
                     </h3>
 
                     <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-12">

@@ -18,19 +18,19 @@ export const values = [
   {
     title: "Impact",
     description:
-      "Driving change through technology by empowering Gen Z to build innovative solutions for global challenges.",
+      "Driving change through technology by empowering tech talent to build innovative solutions for global challenges.",
     icon: GlobeIcon,
   },
   {
     title: "Growth",
     description:
-      "Fostering continuous learning and development for our members, enabling them to thrive in the evolving tech landscape.",
+      "Fostering continuous learning and development for our community, enabling them to thrive in the evolving tech landscape.",
     icon: ChartAreaIcon,
   },
   {
     title: "Inclusion",
     description:
-      "Creating a diverse and welcoming community where everyone, regardless of background, has equal access to opportunities.",
+      "Creating a diverse and welcoming community where everyone has equal access to opportunities and mentorship.",
     icon: HandshakeIcon,
   },
   {
@@ -51,82 +51,82 @@ export type ValueType = (typeof values)[number];
 
 export const what_we_do = [
   {
-    title: "Hackathons",
+    title: "Hybrid Hackathon",
     description:
-      "When passionate minds come together, they build amazing products for real people with real problems. Our hackathons aren't just for developers. They're for anyone with tech skills ready to turn ideas into products that make a difference.",
-    date: "2024",
+      "A dynamic hybrid hackathon where passionate minds build amazing products. Connect with visionaries to turn ideas into reality across Fintech, AgriTech, AI, and more.",
+    date: "2026",
 
     icon: TrophyIcon,
     stats: [
       {
         name: "Participants",
-        value: 200,
+        value: 1500,
         suffix: "+",
       },
 
       {
-        name: "Judges",
-        value: 30,
+        name: "Mentors",
+        value: 50,
         suffix: "+",
       },
 
       {
-        name: "Winners",
-        value: 5,
+        name: "Projects",
+        value: 40,
         suffix: "+",
       },
     ],
   },
   {
-    title: "Challenges",
+    title: "Product Showcase",
     description:
-      "Our challenges are fun, skill-building events where Code Spacers take on creative, problem-solving, and time-bound tasks.",
-    date: "2024",
+      "Interactive product showcases and live pitches of products built. Experience both existing and emerging technologies from Africa's brightest talent.",
+    date: "2026",
 
     icon: PuzzleIcon,
     stats: [
       {
-        name: "Participants",
-        value: 200,
+        name: "Showcases",
+        value: 15,
         suffix: "+",
       },
 
       {
-        name: "Judges",
-        value: 30,
+        name: "Investors",
+        value: 20,
         suffix: "+",
       },
 
       {
-        name: "Winners",
-        value: 5,
+        name: "Categories",
+        value: 12,
         suffix: "+",
       },
     ],
   },
   {
-    title: "Virtual Events",
+    title: "Tech Conference",
     description:
-      "We host young African tech talents doing iconic work during our virtual events, and every Space or webinar inspires, educates, and sparks meaningful discussions among community members.",
-    date: "2024",
+      "Thought-provoking panel sessions, keynote talks, and sponsor exhibitions. Networking opportunities at the intersection of innovation and technology.",
+    date: "2026",
 
     icon: MonitorPlayIcon,
     stats: [
       {
-        name: "Participants",
-        value: 200,
+        name: "Speakers",
+        value: 20,
         suffix: "+",
       },
 
       {
-        name: "Judges",
-        value: 30,
+        name: "Attendees",
+        value: 1000,
         suffix: "+",
       },
 
       {
-        name: "Winners",
-        value: 5,
+        name: "Hours",
+        value: 48,
         suffix: "+",
       },
     ],
@@ -137,46 +137,32 @@ export type WhatWeDo = (typeof what_we_do)[number];
 
 export const stats = [
   {
-    name: "Locations",
-    value: 15,
+    name: "Attendees",
+    value: 1200,
     suffix: "+",
     description:
-      "Our community spans across more than 15 cities worldwide, connecting Gen Z technologists from diverse backgrounds.",
+      "A massive gathering of tech enthusiasts from across the continent, collaborating and learning together.",
   },
   {
-    name: "Members",
-    value: 1000,
+    name: "Sponsors",
+    value: 16,
+    suffix: "",
+    description:
+      "Supported by industry-leading organizations committed to fostering the next generation of tech talent.",
+  },
+  {
+    name: "Projects Built",
+    value: 40,
     suffix: "+",
     description:
-      "With over 1,000 active members, Code Space is growing as a global hub for young innovators and tech enthusiasts.",
+      "Real-world solutions conceived and built during the high-intensity hackathon tracks.",
   },
   {
-    name: "Challenge",
-    value: 1,
-    suffix: "",
-    description:
-      "We've successfully completed our first major challenge, pushing participants to innovate and build impactful tech solutions.",
-  },
-  {
-    name: "Hackathons",
-    value: 2,
-    suffix: "",
-    description:
-      "We've hosted two dynamic hackathons where participants collaborated to solve real-world problems through technology.",
-  },
-  {
-    name: "Physical Events",
-    value: 2,
-    suffix: "",
-    description:
-      "We've hosted two dynamic hackathons where participants collaborated to solve real-world problems through technology.",
-  },
-  {
-    name: "Virtual Events",
+    name: "Speakers",
     value: 20,
     suffix: "+",
     description:
-      "Over 20 virtual events, including workshops, panels, and coding challenges, have kept our community engaged and learning year-round.",
+      "Insightful sessions and mentorship from world-class industry professionals.",
   },
 ];
 
@@ -199,20 +185,20 @@ export const brands = [
 ];
 
 export const links = [
-  { name: "Schedule", href: "/about-us" },
-  { name: "About", href: "/donate" },
-  { name: "Sponsors", href: "/events" },
-  { name: "Speakers", href: "/gallery" },
-  { name: "Partnership", href: "/blog" },
-  { name: "Contact", href: "/contact-us" },
+  { name: "Home", href: "/" },
+  { name: "Schedule", href: "#schedule" },
+  { name: "About", href: "#about" },
+  { name: "Sponsors", href: "#sponsors" },
+  { name: "Speakers", href: "#speakers" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const quick_links = [
-  { name: "About Us", href: "/about-us" },
-  { name: "Donate", href: "/donate" },
-  { name: "Community", href: "/community" },
-  { name: "Contact us", href: "/contact-us" },
-  { name: "FAQs", href: "/#faq" },
+  { name: "About Us", href: "#about" },
+  { name: "Schedule", href: "#schedule" },
+  { name: "Speakers", href: "#speakers" },
+  { name: "Contact Us", href: "#contact" },
+  { name: "FAQs", href: "#faq" },
 ];
 
 export const other_links = [
@@ -226,88 +212,71 @@ export const socials = [
   {
     name: "Email us",
     url: "mailto:hello@codespaces.org",
-    description: "Email us if you've got inquiries.",
+    description: "Email us for inquiries and partnerships.",
     username: "hello@codespaces.org",
     icon: MailIcon,
   },
   {
     name: "x (formerly twitter)",
-    url: "https://twitter.com/CodeSpaceHQ",
-    description: "Join the conversation! We're buzzing with energy on X.",
-    username: "@CodeSpaceHQ",
+    url: "https://twitter.com/codespacehq",
+    description: "Follow us on X for live updates and tech buzz.",
+    username: "@codespacehq",
     icon: Twitter,
-  },
-
-  {
-    name: "facebook",
-    url: "https://www.facebook.com/share/15hbaU6ZpC/?mibextid=LQQJ4d",
-    description:
-      "Follow us on Facebook, and keep in touch with our vibrant community.",
-    username: "@CodeSpace",
-    icon: FacebookIcon,
   },
   {
     name: "instagram",
-    url: "https://instagram.com/CodesSpace",
-    description:
-      "Check out our engaging Reels on Instagram to see what we're up to!",
-    username: "@CodesSpace",
+    url: "https://instagram.com/codespaces",
+    description: "Go behind the scenes and check our impact on Instagram.",
+    username: "@codespaces",
     icon: InstagramIcon,
   },
-
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/company/codespacehq",
-    description:
-      "Connect with us on LinkedIn for insights and professional updates!",
-    username: "@CodeSpace",
+    url: "https://www.linkedin.com/company/codespace",
+    description: "Connect for professional updates and partnerships.",
+    username: "@codespace",
     icon: LinkedinIcon,
   },
 ];
 
 export const why_us = [
   {
-    title: "Community Support",
+    title: "Code Space Community",
     content:
-      "Imagine running a marathon with no one to cheer you on or lift you when you stumble. Tough, right? We get it! With over a thousand Code Spacers by your side, you’ll be amazed at how much easier your tech journey becomes. From support and resources to mentorship opportunities and a network of like-minded people, this is what home should feel like. Welcome to a community that’s got your back every step of the way!",
+      "Code Space is a dynamic community connecting African Gen Zs for Growth, Impact, and Success. We empower developers and tech enthusiasts through education and opportunities.",
   },
   {
-    title: "Access to Resources and Tools",
+    title: "Spacer’s Hack Conf 2026",
     content:
-      "We know what it feels like when you are on a tech journey but do not have access to essential resources. With the help of our donors who believe in us and your dreams, you can access resources such as data stipends, laptops, and tech courses, ensuring you have everything you need to succeed.",
+      "A pioneering 2-in-1 experience uniting tech enthusiasts to push boundaries. Featuring a dynamic hybrid hackathon, interactive product showcases, and curated networking across sectors from Fintech to AI and IoT.",
   },
   {
-    title: "Career Growth",
-    content: `Let’s kick off with one of our favorite quotes. Warning! It’s nothing techy. 
-
-> “If you want to go fast, go alone. If you want to go far, go together.”
-> 
-
-Code Spacers are young and passionate techies. With a community of like-minded people, you can participate in hackathons, tackle coding challenges, and skill-building workshops designed to sharpen your expertise. Plus, you can get guidance and support from seasoned industry professionals here to help you navigate your tech career path.`,
+    title: "Theme: Beyond Boundaries",
+    content: `“Beyond boundaries, Building for tomorrow” is about exploring what’s next through collaboration. Join 1000+ people in person and 1.5k+ virtually on August 29th for our premium conference experience.`,
   },
 ];
 
 export const upcoming_events = [
   {
     image: "https://pbs.twimg.com/media/GbuMEnOWEAgnWNW?format=jpg&name=large",
-    title: "AMA w/ Peace Itimi",
+    title: "Spacer's Hack Conf 2026",
     description:
-      "​Join Peace Itimi for an exclusive AMA (Ask Me Anything) session, where she’ll dive into her journey in building brands and scaling companies in African and emerging markets, crafting impactful stories, and sharing insights from her roles as a growth strategist, educator, and content creator.",
-    date: "13th Nov, 2024",
-    location: "Online / Hybrid",
-    action_link: "https://lu.ma/5xebmpzu?locale=en-GB&tk=WuDgnL",
+      "Africa's pioneering tech event organized by Code Space. Join 1000+ visionaries for a hybrid hackathon, dynamic product showcases, and world-class networking across Fintech, AgriTech, AI, and more.",
+    date: "29th Aug, 2026",
+    location: "Lagos, Nigeria / Hybrid",
+    action_link: "https://hackathon.codespaces.org/",
     action_text: "Register Now",
     icon: MonitorPlayIcon,
     stats: [
       {
-        name: "Registered Participants",
-        value: 200,
+        name: "Registered Attendees",
+        value: 1200,
         suffix: "+",
       },
 
       {
-        name: "Judges",
-        value: 30,
+        name: "Speakers",
+        value: 20,
         suffix: "+",
       },
     ],

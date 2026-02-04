@@ -102,75 +102,67 @@ const interDisplay = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org",
+    process.env.NEXT_PUBLIC_APP_URL || "https://hackathon.codespaces.org",
   ),
   title: {
     default:
-      "Code Space - Africa's Premier Gen Z Tech Community & Innovation Hub",
-    template: "%s | Code Space",
+      "Spacer's Hack Conf 2026 - Beyond Boundaries, Building for Tomorrow",
+    template: "%s | Spacer's Hack Conf 2026",
   },
   description:
-    "Code Space is Africa's leading Gen Z tech community, empowering young tech talents through mentorship, events, and networking. Join our vibrant ecosystem of innovators, developers, and tech enthusiasts to accelerate your tech career and shape Africa's digital future.",
+    "Spacer’s Hack Conf 2026 is Africa's pioneering tech event organized by Code Space. Join 1000+ visionaries for a hybrid hackathon, dynamic product showcases, and world-class networking across Fintech, AgriTech, HealthTech, AI, and more.",
   keywords: [
-    "Code Space",
-    "Tech Community Africa",
-    "Gen Z Tech",
-    "African Tech Community",
-    "Tech Events Africa",
-    "Tech Mentorship",
-    "Tech Network Nigeria",
-    "Tech Education Africa",
+    "Spacer's Hack 2026",
+    "Spacer's Hack Conf",
+    "Beyond boundaries Building for tomorrow",
+    "Code Space Africa",
+    "Tech Conference Africa 2026",
+    "Africa Hackathon 2026",
+    "Fintech Africa",
+    "AgriTech innovation Africa",
+    "HealthTech conference",
+    "Web3 Africa",
+    "AI and IoT Nigeria",
+    "SaaS innovation Africa",
     "African Tech Ecosystem",
-    "Tech Innovation Hub",
     "Tech Talent Africa",
-    "African Tech Events",
-    "Tech Community Lagos",
-    "African Tech Network",
-    "Tech Skills Development",
-    "African Tech Mentorship",
-    "Tech Career Africa",
-    "African Tech Resources",
-    "Tech Community Development",
-    "African Tech Innovation",
+    "Product Showcase Africa",
+    "Software Engineering Nigeria",
   ],
-  authors: [{ name: "Code Space", url: "https://www.codespaces.org" }],
-  creator: "Code Space",
+  authors: [{ name: "Code Space", url: "https://hackathon.codespaces.org" }],
+  creator: "Code Space Team",
   publisher: "Code Space",
   formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
+    email: true,
+    address: true,
+    telephone: true,
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://hackathon.codespaces.org",
     title:
-      "Code Space - Africa's Premier Gen Z Tech Community & Innovation Hub",
+      "Spacer's Hack Conf 2026 - Beyond Boundaries, Building for Tomorrow",
     description:
-      "Code Space is Africa's leading Gen Z tech community, empowering young tech talents through mentorship, events, and networking. Join our vibrant ecosystem of innovators, developers, and tech enthusiasts.",
-    siteName: "Code Space",
+      "The definitive 2-in-1 tech experience in Africa. Hybrid hackathon, product showcases, and keynote talks from industry leaders. August 29th, 2026.",
+    siteName: "Spacer's Hack Conf",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
-          }/images/icon.png`,
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Code Space - Africa's Premier Gen Z Tech Community",
+        alt: "Spacer's Hack Conf 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Code Space - Africa's Premier Gen Z Tech Community & Innovation Hub",
+      "Spacer's Hack Conf 2026 - Beyond Boundaries, Building for Tomorrow",
     description:
-      "Code Space is Africa's leading Gen Z tech community, empowering young tech talents through mentorship, events, and networking. Join our vibrant ecosystem of innovators, developers, and tech enthusiasts.",
-    images: [
-      `${process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org"
-      }/images/icon.png`,
-    ],
-    creator: "@codespace",
+      "Join Africa's boldest tech innovators at Spacer's Hack Conf 2026. August 29th.",
+    images: ["/og-image.png"],
+    creator: "@CodeSpaceHQ",
     site: "@CodeSpaceHQ",
   },
   robots: {
@@ -184,15 +176,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "YOUR_VERIFICATION_CODE",
-    yandex: "YOUR_YANDEX_CODE",
-    other: {
-      bing: "YOUR_BING_CODE",
-    },
-  },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL,
+    canonical:
+      process.env.NEXT_PUBLIC_APP_URL || "https://hackathon.codespaces.org",
   },
 };
 
@@ -203,72 +189,41 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Code Space",
+    "@type": "Event",
+    name: "Spacer's Hack Conf 2026",
     description:
-      "Africa's leading Gen Z tech community, empowering young tech talents through mentorship, events, and networking.",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://www.codespaces.org",
-    logo: `${process.env.NEXT_PUBLIC_APP_URL}/images/logo.png`,
-    foundingDate: "2021",
-    founders: [
-      {
-        "@type": "Person",
-        name: "Clinton Imaro",
+      "Africa's pioneering tech event. Hybrid hackathon, product showcases, and networking. Under the theme ~ 'Beyond boundaries, Building for tomorrow'.",
+    url: "https://hackathon.codespaces.org",
+    startDate: "2026-08-29T09:00:00+01:00",
+    endDate: "2026-08-29T21:00:00+01:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: "Lagos, Nigeria",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "Nigeria",
+        addressLocality: "Lagos",
       },
-    ],
-    sameAs: [
-      "https://x.com/CodeSpaceHQ",
-      "https://www.linkedin.com/company/codespacehq",
-      "https://instagram.com/codesspace",
-    ],
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "Nigeria",
-      addressLocality: "Lagos",
     },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: "hello@codespaces.org",
-    },
-    knowsAbout: [
-      "African Tech Community",
-      "Tech Innovation Hub",
-      "Software Development",
-      "Tech Events Africa",
-      "Tech Education",
-      "Gen Z Tech Community",
-      "African Tech Ecosystem",
-      "Tech Mentorship",
-      "Tech Career Development",
-      "African Tech Network",
-      "Tech Skills Development",
-      "Tech Innovation",
-      "African Tech Resources",
-      "Tech Community Building",
-      "Digital Skills Training",
-    ],
-    areaServed: {
-      "@type": "Continent",
-      name: "Africa",
-    },
-    audience: {
-      "@type": "Audience",
-      audienceType: "Generation Z Tech Enthusiasts",
+    organizer: {
+      "@type": "Organization",
+      name: "Code Space",
+      url: "https://hackathon.codespaces.org",
+      logo: "https://hackathon.codespaces.org/images/logo.png",
     },
     offers: {
       "@type": "Offer",
-      category: [
-        "Tech Community",
-        "Tech Education",
-        "Tech Events",
-        "Mentorship",
-      ],
+      url: "https://hackathon.codespaces.org",
+      availability: "https://schema.org/InStock",
+      price: "0",
+      priceCurrency: "NGN",
     },
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -293,7 +248,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
         <Script
           defer
-          data-domain="codespaces.org"
+          data-domain="hackathon.codespaces.org"
           src="https://plausible.io/js/script.js"
         />
         <Script
