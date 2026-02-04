@@ -10,7 +10,7 @@ import ThemeAndActivities from "@/components/Index/ThemeAndActivities";
 import NavBar from "@/components/nav-bar";
 import { Button } from "@/components/ui/button";
 import Ticket from "@/components/ui/ticket";
-import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,17 +32,35 @@ export default function Home() {
                   immersed in inspiration, integration, innovation, and fun.
                 </p>
 
-                <div className="flex flex-row items-center gap-[10px] sm:gap-4 mt-8 w-full sm:w-auto scrollbar-hide">
-                  <Button
-                    variant="secondary"
-                    className="uppercase flex-1 sm:flex-none sm:w-auto bg-[#BB06C7] hover:bg-[#A005AB] text-white h-[35px] sm:h-12 rounded-[10px] sm:rounded-[8px] text-[10px] sm:text-sm px-2 sm:px-6"
+                <div className="flex flex-col w-full mt-8">
+                  {/* Desktop/Tablet Buttons */}
+                  <div className="hidden sm:flex flex-row items-center gap-4 w-full sm:w-auto">
+                    <Button
+                      variant="secondary"
+                      className="uppercase flex-1 sm:flex-none sm:w-auto bg-[#BB06C7] hover:bg-[#A005AB] text-white h-[35px] sm:h-12 rounded-[10px] sm:rounded-[8px] text-[10px] sm:text-sm px-2 sm:px-6"
+                    >
+                      Register for Hackathon
+                    </Button>
+                    <Button className="!pr-3 text-[#BB06C7] uppercase flex-1 sm:flex-none sm:w-auto bg-[#F0F0FB] hover:bg-[#E0E0EB] h-[35px] sm:h-12 rounded-[10px] sm:rounded-[8px] text-[10px] sm:text-sm px-2 sm:px-6 border border-white/10">
+                      View 2024 Highlights
+                      <ChevronRight className="ml-1 w-3 h-3 sm:w-4 sm:h-4" />
+                    </Button>
+                  </div>
+
+                  {/* Mobile Button (Sponsor) */}
+                  <a
+                    href="https://airtable.com/appyNLSTr1sne7Mfe/pagQjxZAZab6n45MC/form"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex sm:hidden w-full h-[45px] rounded-[6px] overflow-hidden border border-[#170E25]"
                   >
-                    Register for Hackathon
-                  </Button>
-                  <Button className="!pr-3 text-[#BB06C7] uppercase flex-1 sm:flex-none sm:w-auto bg-[#F0F0FB] hover:bg-[#E0E0EB] h-[35px] sm:h-12 rounded-[10px] sm:rounded-[8px] text-[10px] sm:text-sm px-2 sm:px-6 border border-white/10">
-                    View 2024 Highlights
-                    <ChevronRight className="ml-1 w-3 h-3 sm:w-4 sm:h-4" />
-                  </Button>
+                    <div className="flex-1 bg-[#BB06C7] hover:bg-[#A005AB] flex items-center justify-center text-white font-bold uppercase text-[13px] tracking-wide">
+                      Become A 2026 Sponsor
+                    </div>
+                    <div className="w-[45px] bg-white flex items-center justify-center text-black">
+                      <ArrowRight className="w-5 h-5" />
+                    </div>
+                  </a>
                 </div>
                 <div className="mt-10 lg:mt-16">
                   <p className="text-[14px] lg:text-xl text-white max-w-xl font-inter-display leading-[135%]">
@@ -60,7 +78,7 @@ export default function Home() {
               alt="Background"
               width={1146}
               height={859}
-              className="z-0 select-none mt-0 md:mt-10 lg:mt-auto w-[170%] -ml-[35%] max-w-none sm:w-[60%] sm:ml-auto sm:max-w-full lg:w-[1146px] lg:absolute lg:bottom-0 lg:right-0 relative pointer-events-none"
+              className="block lg:hidden z-0 select-none mt-0 md:mt-10 w-[170%] -ml-[35%] max-w-none sm:w-[60%] sm:ml-auto sm:max-w-full relative pointer-events-none"
             />
           </Container>
         </div>
@@ -76,6 +94,15 @@ export default function Home() {
               <p>16 sponsors</p>
             </div>
           </div>
+        </Container>
+        <Container className="relative">
+          <Image
+            src="/astronaut.png"
+            alt="Background"
+            width={1146}
+            height={859}
+            className="hidden lg:block z-0 select-none absolute bottom-0 right-0 mt-auto"
+          />
         </Container>
       </div>
       <Countdown />
