@@ -16,7 +16,7 @@ export default function Ticket() {
           <div className="grid grid-cols-2 gap-6 lg:flex lg:justify-between items-center text-center lg:text-left text-white/80 max-w-lg mx-auto mt-10 lg:mt-14 text-sm lg:text-base">
             <p>Lagos</p>
             <p>1,000+ Developers</p>
-            <p>$20k in prizes</p>
+            <p>₦5m in prizes</p>
             <p>20+ Speakers</p>
           </div>
         </div>
@@ -34,13 +34,20 @@ export default function Ticket() {
         <div className="mt-10 h-[0.5px] bg-white/10" />
         <div className="mt-10 px-6 lg:px-11">
           <p className="text-base lg:text-lg text-white/50 uppercase">Early Bird Ticket</p>
-          <p className="text-white text-3xl lg:text-[42px] font-medium">₦30,000</p>
+          <p className="text-white text-3xl lg:text-[42px] font-medium">₦ 5,000</p>
         </div>
         <div className="px-6 lg:px-8 mt-8">
-          <button className="uppercase bg-[#4F46E5] relative w-full h-14 rounded-xl text-white group">
-            <div className="absolute bg-gradient-to-b from-white/0 to-white group-hover:opacity-20 transition-all cursor-pointer w-full h-full z-0 opacity-15 inset-0 rounded-xl" />
-            <span>Purchase Ticket</span>
-          </button>
+          <a
+            href="https://eventprime.co/e/fusion-tech-fest"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full h-14 block"
+          >
+            <button className="uppercase bg-[#4F46E5] relative w-full h-14 rounded-xl text-white group">
+              <div className="absolute bg-gradient-to-b from-white/0 to-white group-hover:opacity-20 transition-all cursor-pointer w-full h-full z-0 opacity-15 inset-0 rounded-xl" />
+              <span>GET YOUR TICKET</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
