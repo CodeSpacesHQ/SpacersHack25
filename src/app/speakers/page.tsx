@@ -86,6 +86,103 @@ const speakers = [
     },
 ];
 
+const panelists = [
+    {
+        name: "Kenechukwu Nwankwo",
+        role: "Senior Product Manager",
+        image: "/images/panelists/kenechukwu-nwankwo.png",
+        bio: "Kenechukwu is a Senior Product Manager with extensive experience in building user-centric products.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Osita James",
+        role: "Managing Partner at Blackcrest",
+        image: "/images/panelists/osita-james.jpg",
+        bio: "Osita James is a Managing Partner at Blackcrest, specializing in strategic partnerships and business growth.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Omotoso Dolapo",
+        role: "Revenue Growth Director at TransferGo",
+        image: "/images/panelists/omotoso-dolapo-oreoluwa.jpg",
+        bio: "Omotoso Dolapo is the Revenue Growth Director at TransferGo, driving expansion and market penetration.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Precious O'Dahunsi",
+        role: "Product Marketing Manager at Bumpa",
+        image: "/images/panelists/precious-odahunsi.jpg",
+        bio: "Precious is a Product Marketing Manager at Bumpa, helping businesses grow through effective marketing strategies.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Odeh Blessing Asia",
+        role: "Product Designer",
+        image: "/images/panelists/odeh-blessing-asia.jpg",
+        bio: "Odeh Blessing Asia is a creative Product Designer passionate about crafting intuitive user experiences.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+];
+
+const judges = [
+    {
+        name: "Adekunle Kadri",
+        role: "Head of Product Analytics, Access Bank PLC",
+        image: "/images/judge/adekunle-kadri.jpeg",
+        bio: "Adekunle Kadri leads Product Analytics at Access Bank PLC, leveraging data to drive product innovation.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Maxwell Maduka",
+        role: "Co-Founder and CTO, Terrahaptix",
+        image: "/images/judge/maxwell-maduka.jpg",
+        bio: "Maxwell Maduka is the Co-Founder and CTO of Terrahaptix, building cutting-edge haptic technology.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Babatunde Hammed",
+        role: "Head of Operations, Chimoney",
+        image: "/images/judge/babatunde-hammed.jpg",
+        bio: "Babatunde Hammed is the Head of Operations at Chimoney, ensuring smooth and efficient global payments.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Veliswa Boya",
+        role: "Senior Developer Advocate, AWS",
+        image: "/images/judge/veliswa-boya.jpeg",
+        bio: "Veliswa Boya is a Senior Developer Advocate at AWS, empowering developers to build on the cloud.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Tolu Kalejaiye",
+        role: "Developer Relations, Paystack",
+        image: "/images/judge/tolu-kalejaiye.jpg",
+        bio: "Tolu Kalejaiye works in Developer Relations at Paystack, fostering a vibrant developer community.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Curtis Evans",
+        role: "Principal Developer Advocate, AWS",
+        image: "/images/judge/curtis-evans.jpeg",
+        bio: "Curtis Evans is a Principal Developer Advocate at AWS, sharing his expertise in cloud computing and architecture.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Precious Ngwube",
+        role: "Developer Community Manager, Tublian",
+        image: "/images/judge/ngwube-precious.jpg",
+        bio: "Precious Ngwube is a Developer Community Manager at Tublian, connecting developers with opportunities.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        name: "Emmy Cao",
+        role: "Developer Advocate, Wix Studio",
+        image: "/images/judge/emmy-cao.png",
+        bio: "Emmy Cao is a Developer Advocate at Wix Studio, helping creative professionals build stunning web experiences.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+];
+
 const filters = [
     "ALL",
     "HOSTS",
@@ -183,9 +280,21 @@ export default function SpeakersPage() {
                             </div>
                         )}
 
-                        {activeFilter === "PANELISTS" && (
-                            <div className="py-20 text-center text-white/50 font-inter-display">
-                                No panelists announced yet.
+                        {(activeFilter === "ALL" || activeFilter === "PANELISTS") && (
+                            <div>
+                                {activeFilter === "ALL" && (
+                                    <h3 className="font-medium text-[30px] uppercase mb-12 text-white/60 font-inter-display">
+                                        Panelists
+                                    </h3>
+                                )}
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {panelists.map((panelist, i) => (
+                                        <SpeakerCard
+                                            key={`panelist-${i}`}
+                                            {...panelist}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         )}
 
@@ -195,9 +304,21 @@ export default function SpeakersPage() {
                             </div>
                         )}
 
-                        {activeFilter === "JUDGES" && (
-                            <div className="py-20 text-center text-white/50 font-inter-display">
-                                No judges announced yet.
+                        {(activeFilter === "ALL" || activeFilter === "JUDGES") && (
+                            <div>
+                                {activeFilter === "ALL" && (
+                                    <h3 className="font-medium text-[30px] uppercase mb-12 text-white/60 font-inter-display">
+                                        Judges
+                                    </h3>
+                                )}
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {judges.map((judge, i) => (
+                                        <SpeakerCard
+                                            key={`judge-${i}`}
+                                            {...judge}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         )}
                     </div>
