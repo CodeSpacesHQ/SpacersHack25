@@ -42,7 +42,7 @@ const NavBar = () => {
       </div> */}
 
       {/* NavBar */}
-      <Container className="container flex items-center justify-between py-8 z-1">
+      <Container className="container flex items-center justify-between py-8 relative z-50">
         <div className="flex items-center gap-12 w-full">
           <Link href={"/"}>
             <Logo />
@@ -51,7 +51,7 @@ const NavBar = () => {
             {links.map((link) => (
               <li key={link.name}>
                 <Link
-                  className="subtitle hover:text-secondary"
+                  className="text-white/90 hover:text-white transition-colors font-medium uppercase"
                   href={link.href}
                 >
                   {link.name}
@@ -62,8 +62,7 @@ const NavBar = () => {
         </div>
         <Button
           size={"sm"}
-          variant="secondary"
-          className="hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-2.5 !h-fit"
+          className="hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-2.5 !h-fit bg-white text-black hover:bg-white/90 transition-colors"
         >
           <a
             href="https://forms.gle/hhuLVupnm2F1AGa96"

@@ -102,9 +102,20 @@ export default function SpeakersPage() {
         <main className="relative min-h-screen bg-[#0B0D13] text-white overflow-x-hidden">
             <div className="absolute left-0 right-0 -top-96 rounded-full blur-[250px] h-[1000px] w-[1000px] bg-[#4F46E5]/20 pointer-events-none -z-10" />
 
+            <div className="absolute top-0 left-0 w-full h-[800px] pointer-events-none z-0">
+                <div className="relative w-full h-full">
+                    <img
+                        src="/bg.png"
+                        alt="Hero Background"
+                        className="w-full h-full object-cover opacity-60"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0B0D13]/60 to-[#0B0D13]" />
+                </div>
+            </div>
+
             <NavBar />
 
-            <div className="pt-32 lg:pt-48 pb-20">
+            <div className="pt-32 lg:pt-48 pb-20 relative z-10">
                 <Container>
                     <div className="mb-20">
                         <h2 className="text-lg md:text-xl font-medium tracking-wide mb-4 font-inter-display uppercase text-white/80">
