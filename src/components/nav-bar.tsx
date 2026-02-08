@@ -62,7 +62,12 @@ const NavBar = () => {
         </div>
         <Button
           size={"sm"}
-          className="hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-2.5 !h-fit bg-white text-black hover:bg-white/90 transition-colors"
+          variant={pathname === "/speakers" ? "ghost" : "secondary"}
+          className={cn(
+            "hidden lg:block uppercase font-normal !px-5 text-sm ml-4 py-2.5 !h-fit",
+            pathname === "/speakers" &&
+            "bg-white text-black hover:bg-white/90 transition-colors"
+          )}
         >
           <a
             href="https://forms.gle/hhuLVupnm2F1AGa96"
