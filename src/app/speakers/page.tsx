@@ -100,14 +100,12 @@ export default function SpeakersPage() {
 
     return (
         <main className="relative min-h-screen bg-[#0B0D13] text-white overflow-x-hidden">
-            {/* Background blobs similar to home page but toned down */}
             <div className="absolute left-0 right-0 -top-96 rounded-full blur-[250px] h-[1000px] w-[1000px] bg-[#4F46E5]/20 pointer-events-none -z-10" />
 
             <NavBar />
 
             <div className="pt-32 lg:pt-48 pb-20">
                 <Container>
-                    {/* Header Section */}
                     <div className="mb-20">
                         <h2 className="text-lg md:text-xl font-medium tracking-wide mb-4 font-inter-display uppercase text-white/80">
                             SPACER'S HACK CONF 2026
@@ -121,7 +119,6 @@ export default function SpeakersPage() {
                             working on everything from fintech to commerce, energy, Web3, AI, and more.
                         </p>
 
-                        {/* Filter Buttons */}
                         <div className="flex flex-wrap gap-3">
                             {filters.map((filter) => (
                                 <button
@@ -141,9 +138,7 @@ export default function SpeakersPage() {
                         </div>
                     </div>
 
-                    {/* Speakers Grid */}
                     <div className="space-y-20">
-                        {/* Hosts Section - Show if filter is ALL or HOSTS */}
                         {(activeFilter === "ALL" || activeFilter === "HOSTS") && (
                             <div>
                                 {activeFilter === "ALL" && (
@@ -159,7 +154,6 @@ export default function SpeakersPage() {
                             </div>
                         )}
 
-                        {/* Speakers Section - Show if filter is ALL or SPEAKERS */}
                         {(activeFilter === "ALL" || activeFilter === "SPEAKERS") && (
                             <div>
                                 {activeFilter === "ALL" && (
@@ -178,21 +172,18 @@ export default function SpeakersPage() {
                             </div>
                         )}
 
-                        {/* Panelists Placeholder - Show if filter is PANELISTS */}
                         {activeFilter === "PANELISTS" && (
                             <div className="py-20 text-center text-white/50 font-inter-display">
                                 No panelists announced yet.
                             </div>
                         )}
 
-                        {/* Mentors Placeholder - Show if filter is MENTORS */}
                         {activeFilter === "MENTORS" && (
                             <div className="py-20 text-center text-white/50 font-inter-display">
                                 No mentors announced yet.
                             </div>
                         )}
 
-                        {/* Judges Placeholder - Show if filter is JUDGES */}
                         {activeFilter === "JUDGES" && (
                             <div className="py-20 text-center text-white/50 font-inter-display">
                                 No judges announced yet.

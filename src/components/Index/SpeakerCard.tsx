@@ -45,7 +45,7 @@ export default function SpeakerCard({ name, role, image, bio, socials, imagePosi
                 <h3 className="font-medium text-[24px] mb-2 font-inter-display">
                     {name}
                 </h3>
-                <p className="text-[22px] font-normal text-white font-inter-display leading-[130%]">
+                <p className="text-[16px] font-normal text-white font-inter-display leading-[130%]">
                     {role}
                 </p>
 
