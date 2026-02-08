@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../container";
 import SpeakerCard from "./SpeakerCard";
 
@@ -116,9 +117,11 @@ export default function Speakers() {
         </div>
 
         <div className="mt-24 flex justify-center">
-          <button className="bg-white text-black text-lg px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors uppercase font-inter-display">
-            View all speakers
-          </button>
+          <Link href="/speakers">
+            <button className="bg-white text-black text-lg px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors uppercase font-inter-display">
+              View all speakers
+            </button>
+          </Link>
         </div>
 
 
