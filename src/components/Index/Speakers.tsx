@@ -22,28 +22,62 @@ const hosts = [
       linkedin: "#"
     }
   },
+  {
+    name: "Felix Bissong (TheGenzHR)",
+    role: "Panel Moderator/Recruiter and HR professional",
+    image: "/images/hosts/felix-bissong.jpg",
+    bio: "Detailed bio coming soon...",
+    imagePosition: "object-[50%_25%]",
+    socials: {
+      twitter: "#",
+      linkedin: "#"
+    }
+  },
 ];
 
 const keynoteSpeakers = [
   {
-    name: "Odun Eweniyi",
-    role: "Cofounder/COO, Piggytech",
-    image: "/images/speakers/odunayo-eweniyi.png",
-    bio: "Odunayo Eweniyi is the co-founder and Chief Operations Officer of Piggytech, the company behind Piggyvest, Nigeria’s largest digital savings and micro-investment platform with over 6 million users.",
+    name: "Sodiq Akinjobi",
+    role: "Developer Ecosystem Community Manager, Google",
+    image: "/images/speakers/sodiq-akinjobi.jpg",
+    bio: "Sodiq Akinjobi is the Developer Ecosystem Community Manager at Google. He is passionate about building communities and empowering developers.",
+    imagePosition: "object-[50%_35%]",
     socials: { twitter: "#", linkedin: "#" }
   },
   {
-    name: "Peace Itimi",
-    role: "Host Founders Connect",
-    image: "/images/speakers/peace-itimi.png",
-    bio: "Peace Itimi is a Growth Marketer and YouTuber. She is the Host of 'Founders Connect'.",
+    name: "Peace Obinani",
+    role: "Founder, Non-tech In Tech",
+    image: "/images/speakers/peace-obinani.jpg",
+    bio: "Peace Obinani is the Founder of Non-tech In Tech. she is passionate about helping non-technical people break into the tech industry.",
+    imagePosition: "object-[50%_35%]",
     socials: { twitter: "#", linkedin: "#" }
   },
   {
-    name: "Ire Aderinokun",
-    role: "Limited Partner, Angel Investor",
-    image: "/images/speakers/ire-aderinokun.png",
-    bio: "Ire Aderinokun is an investor, entrepreneur, and software engineer with a decade of experience building and backing technology ventures in frontier markets.",
+    name: "David Ijaola",
+    role: "Product Manager at Norebase",
+    image: "/images/speakers/david-ijaola.jpeg",
+    bio: "David Ijaola is a Product Manager at Norebase. He is passionate about building products that solve real-world problems.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+  {
+    name: "Kanayo Uzo",
+    role: "Brand Designer at Belonwus",
+    image: "/images/speakers/kanayo-uzo.jpg",
+    bio: "Kanayo Uzo is a Brand Designer at Belonwus. passionate about creating engaging brands and visual identities.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+  {
+    name: "Nmesoma Okonkwo",
+    role: "Product Designer at Fundall",
+    image: "/images/speakers/nmesoma-okonkwo.png",
+    bio: "Nmesoma Okonkwo is a Product Designer at Fundall. She is passionate about creating user-centric designs.",
+    socials: { twitter: "#", linkedin: "#" }
+  },
+  {
+    name: "Orim Dominic",
+    role: "Software Engineer at Zedi Africa",
+    image: "/images/speakers/orim-dominic.jpg",
+    bio: "Orim Dominic is a Software Engineer at Zedi Africa. He is passionate about building scalable software solutions.",
     socials: { twitter: "#", linkedin: "#" }
   },
 ];
@@ -69,7 +103,7 @@ export default function Speakers() {
 
         <div className="mt-24">
           <h3 className="font-medium text-[30px] uppercase text-white/60 font-inter-display">
-            Keynote Speakers
+            Speakers
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {keynoteSpeakers.map((speaker, i) => (
@@ -81,37 +115,13 @@ export default function Speakers() {
           </div>
         </div>
 
-        <div className="mt-24">
-          <h3 className="font-medium text-[30px] uppercase text-white/60 font-inter-display">
-            Panelists
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {[0, 1, 2].map((i) => (
-              <SpeakerCard
-                key={`panelists-${i}`}
-                name="Amarachi Johnson-Ubah"
-                role="Community Manager"
-                bio="Detailed bio coming soon..."
-              />
-            ))}
-          </div>
+        <div className="mt-24 flex justify-center">
+          <button className="bg-white text-black text-lg px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors uppercase font-inter-display">
+            View all speakers
+          </button>
         </div>
 
-        <div className="mt-24">
-          <h3 className="font-medium text-[30px] uppercase text-white/60 font-inter-display">
-            Speakers
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {[0, 1, 2].map((i) => (
-              <SpeakerCard
-                key={`speakers-${i}`}
-                name="Amarachi Johnson-Ubah"
-                role="Community Manager"
-                bio="Detailed bio coming soon..."
-              />
-            ))}
-          </div>
-        </div>
+
       </Container>
     </div>
   );

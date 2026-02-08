@@ -10,13 +10,14 @@ interface SpeakerProps {
     role: string;
     image?: string;
     bio?: string;
+    imagePosition?: string;
     socials?: {
         twitter?: string;
         linkedin?: string;
     };
 }
 
-export default function SpeakerCard({ name, role, image, bio, socials }: SpeakerProps) {
+export default function SpeakerCard({ name, role, image, bio, socials, imagePosition = "object-top" }: SpeakerProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -35,7 +36,7 @@ export default function SpeakerCard({ name, role, image, bio, socials }: Speaker
                         src={image}
                         alt={name}
                         fill
-                        className="object-cover object-top"
+                        className={`object-cover ${imagePosition}`}
                     />
                 ) : null}
             </motion.div>
