@@ -29,7 +29,7 @@ const Footer = () => {
                   { name: "LinkedIn", url: "https://www.linkedin.com/company/codespacehq" },
                   { name: "X (Formally Twitter)", url: "https://twitter.com/CodeSpaceHQ" },
                   { name: "Instagram", url: "https://instagram.com/CodesSpace" },
-                  { name: "GitHub", url: "https://github.com/CodeSpaceHQ" }
+                  { name: "GitHub", url: "https://github.com/CodeSpacesHQ" }
                 ].map((social) => (
                   <Link
                     key={social.name}
