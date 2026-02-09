@@ -148,47 +148,47 @@ export default function GuidelinesPage() {
                             </p>
                         </div>
 
-                        <div className="relative w-full aspect-square bg-[#0A0A0A] rounded-xl overflow-hidden p-8 md:p-12">
-                            <div className="absolute top-8 left-8 md:top-12 md:left-12 z-20 text-white">
-                                <p className="font-bold text-xl mb-1">Space Black</p>
-                                <p className="font-mono text-sm opacity-60">HEX: #0A0A0A</p>
-                                <p className="font-mono text-sm opacity-60">RGB: 10, 10, 10</p>
+                        <div className="relative w-full aspect-[2/3] md:aspect-square bg-[#0A0A0A] rounded-xl overflow-hidden p-6 md:p-12">
+                            <div className="absolute top-6 left-6 md:top-12 md:left-12 z-20 text-white">
+                                <p className="font-bold text-lg md:text-xl mb-1">Space Black</p>
+                                <p className="font-mono text-xs md:text-sm opacity-60">HEX: #0A0A0A</p>
+                                <p className="font-mono text-xs md:text-sm opacity-60">RGB: 10, 10, 10</p>
                             </div>
 
-                            <div className="absolute top-[12%] left-[12%] w-[150%] h-[150%]">
-                                <div className="relative w-full h-full bg-[#4F46E5] rounded-tl-3xl p-6 md:p-8">
+                            <div className="absolute top-[22%] left-[10%] md:top-[12%] md:left-[12%] w-[150%] h-[150%]">
+                                <div className="relative w-full h-full bg-[#4F46E5] rounded-tl-2xl md:rounded-tl-3xl p-4 md:p-8">
                                     <div className="text-white">
-                                        <p className="font-bold text-lg mb-1">Electric Indigo</p>
-                                        <p className="font-mono text-sm opacity-80">HEX: #4F46E5</p>
-                                        <p className="font-mono text-sm opacity-80">RGB: 79, 70, 229</p>
+                                        <p className="font-bold text-base md:text-lg mb-1">Electric Indigo</p>
+                                        <p className="font-mono text-xs md:text-sm opacity-80">HEX: #4F46E5</p>
+                                        <p className="font-mono text-xs md:text-sm opacity-80">RGB: 79, 70, 229</p>
                                     </div>
 
-                                    <div className="absolute top-24 left-24 md:top-32 md:left-32 right-0 bottom-0 bg-[#BEF264] rounded-tl-3xl p-6 md:p-8">
+                                    <div className="absolute top-24 left-10 md:top-32 md:left-32 right-0 bottom-0 bg-[#BEF264] rounded-tl-2xl md:rounded-tl-3xl p-4 md:p-8">
                                         <div className="text-black">
-                                            <p className="font-bold text-lg mb-1">Acid Green</p>
-                                            <p className="font-mono text-sm opacity-80">HEX: #BEF264</p>
-                                            <p className="font-mono text-sm opacity-80">RGB: 190, 242, 100</p>
+                                            <p className="font-bold text-base md:text-lg mb-1">Acid Green</p>
+                                            <p className="font-mono text-xs md:text-sm opacity-80">HEX: #BEF264</p>
+                                            <p className="font-mono text-xs md:text-sm opacity-80">RGB: 190, 242, 100</p>
                                         </div>
 
-                                        <div className="absolute top-24 left-24 md:top-32 md:left-32 right-0 bottom-0 bg-[#6B3D0C] rounded-tl-3xl p-6 md:p-8">
+                                        <div className="absolute top-24 left-10 md:top-32 md:left-32 right-0 bottom-0 bg-[#6B3D0C] rounded-tl-2xl md:rounded-tl-3xl p-4 md:p-8">
                                             <div className="text-white">
-                                                <p className="font-bold text-lg mb-1">Rock Brown</p>
-                                                <p className="font-mono text-sm opacity-80">HEX: #6B3D0C</p>
-                                                <p className="font-mono text-sm opacity-80">RGB: 107, 61, 12</p>
+                                                <p className="font-bold text-base md:text-lg mb-1">Rock Brown</p>
+                                                <p className="font-mono text-xs md:text-sm opacity-80">HEX: #6B3D0C</p>
+                                                <p className="font-mono text-xs md:text-sm opacity-80">RGB: 107, 61, 12</p>
                                             </div>
 
-                                            <div className="absolute top-24 left-24 md:top-32 md:left-32 right-0 bottom-0 bg-[#BB06C7] rounded-tl-3xl p-6 md:p-8">
+                                            <div className="absolute top-24 left-10 md:top-32 md:left-32 right-0 bottom-0 bg-[#BB06C7] rounded-tl-2xl md:rounded-tl-3xl p-4 md:p-8">
                                                 <div className="text-white">
-                                                    <p className="font-bold text-lg mb-1">Pink</p>
-                                                    <p className="font-mono text-sm opacity-80">HEX: #BB06C7</p>
-                                                    <p className="font-mono text-sm opacity-80">RGB: 187, 6, 199</p>
+                                                    <p className="font-bold text-base md:text-lg mb-1">Pink</p>
+                                                    <p className="font-mono text-xs md:text-sm opacity-80">HEX: #BB06C7</p>
+                                                    <p className="font-mono text-xs md:text-sm opacity-80">RGB: 187, 6, 199</p>
                                                 </div>
 
-                                                <div className="absolute top-24 left-24 md:top-32 md:left-32 right-0 bottom-0 bg-[#FFD1B9] rounded-tl-3xl p-6 md:p-8">
+                                                <div className="absolute top-24 left-10 md:top-32 md:left-32 right-0 bottom-0 bg-[#FFD1B9] rounded-tl-2xl md:rounded-tl-3xl p-4 md:p-8">
                                                     <div className="text-black">
-                                                        <p className="font-bold text-lg mb-1">Human Peach</p>
-                                                        <p className="font-mono text-sm opacity-80">HEX: #FFD1B9</p>
-                                                        <p className="font-mono text-sm opacity-80">RGB: 255, 209, 185</p>
+                                                        <p className="font-bold text-base md:text-lg mb-1">Human Peach</p>
+                                                        <p className="font-mono text-xs md:text-sm opacity-80">HEX: #FFD1B9</p>
+                                                        <p className="font-mono text-xs md:text-sm opacity-80">RGB: 255, 209, 185</p>
                                                     </div>
                                                 </div>
                                             </div>
