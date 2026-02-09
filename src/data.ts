@@ -203,7 +203,7 @@ export const quick_links = [
 
 export const other_links = [
   { name: "Brand Guidelines", href: "/brand" },
-  { name: "Code of Conduct", href: "/code-of-conduct" },
+  { name: "Code of Conduct", href: "https://github.com/CodeSpacesHQ/SpacersHack25/blob/main/code-of-conduct.md" },
   { name: "Gallery", href: "https://www.codespaces.org/gallery" },
   { name: "Community", href: "https://www.codespaces.org/" },
 ];
