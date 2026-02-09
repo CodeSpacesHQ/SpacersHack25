@@ -72,7 +72,7 @@ export default function CustomVideoPlayer() {
     const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
     return (
-        <div className="group relative flex h-full w-full overflow-hidden outline-none rounded-xl aspect-video bg-black/50 border border-white/10 shadow-2xl">
+        <div className="group relative flex h-full w-full overflow-hidden outline-none rounded-xl aspect-video">
             <div className="h-full w-full pointer-events-none">
                 <video
                     ref={videoRef}
