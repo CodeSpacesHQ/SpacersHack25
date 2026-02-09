@@ -186,24 +186,25 @@ export const brands = [
 
 export const links = [
   { name: "Home", href: "/" },
-  { name: "Schedule", href: "#schedule" },
+  { name: "Schedule", href: "/#schedule" },
   { name: "About", href: "#about" },
   { name: "Sponsors", href: "#sponsors" },
   { name: "Speakers", href: "#speakers" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "https://www.codespaces.org/contact-us" },
 ];
 
 export const quick_links = [
   { name: "About Us", href: "#about" },
-  { name: "Schedule", href: "#schedule" },
+  { name: "Schedule", href: "/#schedule" },
   { name: "Speakers", href: "/speakers" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "Contact Us", href: "https://www.codespaces.org/contact-us" },
   { name: "FAQs", href: "/#faq" },
 ];
 
 export const other_links = [
   { name: "Brand Guidelines", href: "/brand" },
   { name: "Code of Conduct", href: "https://github.com/CodeSpacesHQ/SpacersHack25/blob/main/code-of-conduct.md" },
+  { name: "Hacker Resources", href: "#" },
   { name: "Gallery", href: "https://www.codespaces.org/gallery" },
   { name: "Community", href: "https://www.codespaces.org/" },
 ];
