@@ -196,16 +196,16 @@ export const links = [
 export const quick_links = [
   { name: "About Us", href: "#about" },
   { name: "Schedule", href: "#schedule" },
-  { name: "Speakers", href: "#speakers" },
+  { name: "Speakers", href: "/speakers" },
   { name: "Contact Us", href: "#contact" },
-  { name: "FAQs", href: "#faq" },
+  { name: "FAQs", href: "/#faq" },
 ];
 
 export const other_links = [
-  { name: "Brand Guidelines", href: "/brand-guidelines" },
-  { name: "Ambassador Program", href: "/ambassador-program" },
-  { name: "Partner with us", href: "/partner" },
-  { name: "Press Feature", href: "/press" },
+  { name: "Brand Guidelines", href: "/guidelines" },
+  { name: "Code of Conduct", href: "/code-of-conduct" },
+  { name: "Gallery", href: "https://www.codespaces.org/gallery" },
+  { name: "Community", href: "https://www.codespaces.org/" },
 ];
 
 export const socials = [

@@ -42,7 +42,7 @@ export default function Home() {
                       Register for Hackathon
                     </Button>
                     <Button className="!pr-3 text-[#BB06C7] uppercase flex-1 sm:flex-none sm:w-auto bg-[#F0F0FB] hover:bg-[#E0E0EB] h-[35px] sm:h-12 rounded-[10px] sm:rounded-[8px] text-[10px] sm:text-sm px-2 sm:px-6 border border-white/10">
-                      View 2024 Highlights
+                      Become a 2026 sponsor
                       <ChevronRight className="ml-1 w-3 h-3 sm:w-4 sm:h-4" />
                     </Button>
                   </div>
