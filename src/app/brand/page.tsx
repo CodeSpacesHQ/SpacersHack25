@@ -219,26 +219,22 @@ export default function BrandPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="group cursor-pointer">
-                                <div className="bg-[#F7F7F7] rounded-lg aspect-[4/3] flex items-center justify-center mb-4 transition-colors group-hover:bg-gray-100">
-                                    <div className="w-1/3 h-1/3 bg-gray-200 rounded-full blur-3xl opacity-50"></div>
-                                    <span className="text-gray-400 font-medium">3D Elements Pack</span>
+                                <div className="bg-[#1F2128] rounded-xl aspect-[4/3] overflow-hidden mb-4 transition-transform group-hover:scale-[0.98]">
+                                    <img src="/3DObjects.png" alt="3D Objects" className="w-full h-full object-cover" />
                                 </div>
-                                <div className="flex justify-between items-center">
+                                <div className="flex justify-between items-center px-1">
                                     <span className="font-medium text-lg">3D Objects</span>
-                                    <Download className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <Download className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />
                                 </div>
                             </div>
 
                             <div className="group cursor-pointer">
-                                <div className="bg-[#4F46E5] rounded-lg aspect-[4/3] flex items-center justify-center mb-4 transition-colors group-hover:opacity-90">
-                                    <div className="grid grid-cols-2 gap-4 opacity-50">
-                                        <div className="w-12 h-12 border border-white rounded-full"></div>
-                                        <div className="w-12 h-12 border border-white rotate-45"></div>
-                                    </div>
+                                <div className="bg-[#1F2128] rounded-xl aspect-[4/3] overflow-hidden mb-4 transition-transform group-hover:scale-[0.98]">
+                                    <img src="/Iconography.png" alt="Iconography" className="w-full h-full object-cover" />
                                 </div>
-                                <div className="flex justify-between items-center">
+                                <div className="flex justify-between items-center px-1">
                                     <span className="font-medium text-lg">Iconography Set</span>
-                                    <Download className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <Download className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />
                                 </div>
                             </div>
                         </div>
