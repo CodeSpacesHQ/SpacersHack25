@@ -74,7 +74,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            SPONSOR EVENT
+            Get Tickets
           </a>
         </Button>
 
@@ -144,7 +144,7 @@ const NavBar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    SPONSOR EVENT
+                    Get Tickets
                   </a>
                 </Button>
               </div>
