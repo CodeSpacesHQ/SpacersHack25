@@ -6,7 +6,9 @@ import CustomVideoPlayer from "@/components/ui/custom-video-player";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Spacer's Hack Design",
+    title: {
+        absolute: "Spacer's Hack Design",
+    },
     openGraph: {
         images: ["/og-image.png"],
     },
