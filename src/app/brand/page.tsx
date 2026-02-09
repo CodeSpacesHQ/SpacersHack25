@@ -3,6 +3,14 @@ import Link from "next/link";
 import { Download } from "lucide-react";
 import { Logo } from "@/components/brand";
 import CustomVideoPlayer from "@/components/ui/custom-video-player";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Spacer's Hack Design",
+    openGraph: {
+        images: ["/og-image.png"],
+    },
+};
 
 const sections = [
     { id: "logo", title: "Logo" },
@@ -11,7 +19,7 @@ const sections = [
     { id: "assets", title: "Assets" },
 ];
 
-export default function GuidelinesPage() {
+export default function BrandPage() {
     return (
         <div className="min-h-screen bg-[#0e1016] text-white font-sans selection:bg-purple-500 selection:text-white">
             <div className="flex flex-col md:flex-row min-h-screen">
