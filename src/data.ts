@@ -194,7 +194,7 @@ export const links = [
 ];
 
 export const quick_links = [
-  { name: "About Us", href: "#about" },
+  { name: "Initiatives", href: "https://www.codespaces.org/events" },
   { name: "Schedule", href: "/#schedule" },
   { name: "Speakers", href: "/speakers" },
   { name: "Contact Us", href: "https://www.codespaces.org/contact-us" },
