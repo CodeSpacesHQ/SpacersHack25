@@ -99,7 +99,7 @@
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -121,10 +121,28 @@ html.lenis {
 
 .animate-marquee {
   animation: marquee 60s linear infinite;
-  width: 400%;
 }
 
 .animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 60s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
   animation-play-state: paused;
 }
 

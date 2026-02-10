@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Download } from "lucide-react";
 import { Logo } from "@/components/brand";
+import NavBar from "@/components/nav-bar";
 import CustomVideoPlayer from "@/components/ui/custom-video-player";
 import type { Metadata } from "next";
 
@@ -24,6 +26,9 @@ const sections = [
 export default function BrandPage() {
     return (
         <div className="min-h-screen bg-[#0e1016] text-white font-sans selection:bg-purple-500 selection:text-white">
+            <div className="md:hidden">
+                <NavBar />
+            </div>
             <div className="flex flex-col md:flex-row min-h-screen">
 
 
@@ -76,16 +81,51 @@ export default function BrandPage() {
                             </p>
                         </div>
 
-                        <div className="grid gap-8">
-                            <div className="bg-[#F7F7F7] rounded-lg p-12 md:p-24 flex items-center justify-center min-h-[400px]">
-                                <h3 className="text-6xl md:text-8xl font-bold font-duplicate-sans tracking-tight text-black">
-                                    SPACERS
-                                </h3>
+                        <div className="grid grid-cols-1 gap-8">
+                            <div className="bg-[#F7F7F7] rounded-lg overflow-hidden flex items-center justify-center relative">
+                                <Image
+                                    src="/logos/logo1.png"
+                                    alt="Spacer's Hack Logo 1"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    className="w-full h-auto object-contain"
+                                />
                             </div>
-                            <div className="bg-black rounded-lg p-12 md:p-24 flex items-center justify-center min-h-[400px]">
-                                <h3 className="text-6xl md:text-8xl font-bold font-duplicate-sans tracking-tight text-white">
-                                    SPACERS
-                                </h3>
+
+                            <div className="bg-black rounded-lg overflow-hidden flex items-center justify-center relative">
+                                <Image
+                                    src="/logos/logo2.png"
+                                    alt="Spacer's Hack Logo 2"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    className="w-full h-auto object-contain"
+                                />
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="bg-[#F7F7F7] rounded-lg overflow-hidden flex items-center justify-center relative">
+                                    <Image
+                                        src="/logos/logo3.png"
+                                        alt="Spacer's Hack Logo 3"
+                                        width={0}
+                                        height={0}
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="w-full h-auto object-contain"
+                                    />
+                                </div>
+
+                                <div className="bg-black rounded-lg overflow-hidden flex items-center justify-center relative">
+                                    <Image
+                                        src="/logos/logo4.png"
+                                        alt="Spacer's Hack Logo 4"
+                                        width={0}
+                                        height={0}
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="w-full h-auto object-contain"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="flex flex-wrap gap-4">
@@ -206,6 +246,12 @@ export default function BrandPage() {
                                     </div>
                                 </div>
                             </div>
+                            <Image
+                                src="/noise.png"
+                                alt="Noise Overlay"
+                                fill
+                                className="object-cover opacity-50 pointer-events-none z-50 mix-blend-overlay"
+                            />
                         </div>
                     </section>
 
