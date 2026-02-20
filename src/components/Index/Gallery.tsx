@@ -36,13 +36,21 @@ const GalleryCard = ({ src, index }: { src: string; index: number }) => {
 
 const Gallery = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [randomizedImages, setRandomizedImages] = useState<string[]>([]);
+
+    React.useEffect(() => {
+        const shuffled = [...galleryImages].sort(() => 0.5 - Math.random());
+        setRandomizedImages(shuffled);
+    }, []);
+
+    const displayImages = randomizedImages.length > 0 ? randomizedImages : galleryImages;
 
     return (
         <section className="bg-white py-0 overflow-hidden relative" id="gallery">
             <div className="flex flex-col gap-[10px] relative select-none pointer-events-none">
                 <div className="relative w-full overflow-hidden">
                     <div className="flex w-max animate-marquee-reverse gap-[10px]">
-                        {[...galleryImages, ...galleryImages].map((src, index) => (
+                        {[...displayImages, ...displayImages].map((src, index) => (
                             <GalleryCard key={`top-${index}`} src={src} index={index} />
                         ))}
                     </div>
@@ -50,7 +58,7 @@ const Gallery = () => {
 
                 <div className="relative w-full overflow-hidden">
                     <div className="flex w-max animate-marquee gap-[10px]">
-                        {[...galleryImages, ...galleryImages].reverse().map((src, index) => (
+                        {[...displayImages, ...displayImages].reverse().map((src, index) => (
                             <GalleryCard key={`bottom-${index}`} src={src} index={index} />
                         ))}
                     </div>

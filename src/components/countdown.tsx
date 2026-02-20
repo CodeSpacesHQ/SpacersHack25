@@ -36,16 +36,9 @@ export default function Countdown() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    // ... (This tool call handles multiple files? No, strict rules say one file per tool call usually unless multi_replace.
-    // Wait, "Use this tool ONLY when you are making a SINGLE CONTIGUOUS block".
-    // I need to use `multi_replace_file_content` if I want to edit 3 files? No, `multi_replace` is for "same file".
-    // I must make 3 separate tool calls.
-
-    // Calling for Countdown first as it requires the most logic restoration.
     <div className="w-full py-[30px] bg-[#16181E] flex flex-col items-center justify-center md:text-[20px]">
       <p className="subtitle text-[18px] md:text-[20px] mb-8 text-center text-white/50 md:text-inherit md:text-white md:mb-0">2026 Hackathon starts in</p>
 
-      {/* Mobile View (Stacked) */}
       <div className="flex md:hidden items-start justify-center gap-3 text-white w-full max-w-[360px] px-4">
         <div className="flex flex-col items-center gap-1">
           <span className="text-[32px] font-normal leading-tight">{format(time.days)}</span>
@@ -68,7 +61,6 @@ export default function Countdown() {
         </div>
       </div>
 
-      {/* Desktop View (Original Single Line) */}
       <div className="hidden md:flex items-center gap-4 text-white/90 text-[20px]">
         <p>{format(time.days)} Days</p>
         <p>:</p>

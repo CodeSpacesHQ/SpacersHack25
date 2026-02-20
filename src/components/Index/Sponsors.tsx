@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function Sponsors() {
     const sponsors = [
-        { name: "AWS", logo: "/images/sponsors/aws.png" },
-        { name: "Paystack", logo: "/images/sponsors/paystack.png" },
+        { name: "AWS", logo: "/images/sponsors/aws-color.png" },
+        { name: "Paystack", logo: "/images/sponsors/Paystack_Color.png" },
         { name: "Wix Studio", logo: "/images/sponsors/wix-studio.webp" },
-        { name: "Kora", logo: "/images/sponsors/kora.png" },
+        { name: "Kora", logo: "/images/sponsors/Kora_New.png" },
         { name: "TerraHaptix", logo: "/images/sponsors/terrahaptix.webp" },
         { name: "Pallax", logo: "/images/sponsors/pallax.png" },
-        { name: "Tublian", logo: "/images/sponsors/tuliban.png" },
-        { name: "JetBrains", logo: "/images/sponsors/jetbrains.png" },
-        { name: "Inside The Tech Ecosystem", logo: "/images/sponsors/inside-the-tech-ecosystem.jpg" },
+        { name: "Tublian", logo: "/images/sponsors/tublianimage.png" },
+        { name: "JetBrains", logo: "/images/sponsors/jetbrains-mono-white.png" },
+        { name: "Inside The Tech Ecosystem", logo: "/images/sponsors/insidethetechosystem2.png" },
         { name: "Google", logo: "/images/sponsors/google.webp" },
         { name: "Couchbase", logo: "/images/sponsors/couchbase.png" },
     ];
@@ -44,14 +44,14 @@ export default function Sponsors() {
                 return (
                     <div
                         key={index}
-                        className={`relative h-16 w-40 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ${isJpg ? "mix-blend-multiply" : ""
+                        className={`relative h-16 w-40 flex items-center justify-center ${isJpg ? "mix-blend-multiply" : ""
                             }`}
                     >
                         <Image
                             src={partner.logo}
                             alt={partner.name}
                             fill
-                            className={`object-contain ${isJpg ? "mix-blend-multiply" : ""} ${partner.name === "TerraHaptix" ? "brightness-0 invert scale-[1.5]" : ""}`}
+                            className={`object-contain ${isJpg ? "mix-blend-multiply" : ""} ${partner.name === "TerraHaptix" || partner.name === "Wix Studio" ? "brightness-0 invert scale-[1.5]" : ""} ${partner.name === "Inside The Tech Ecosystem" ? "scale-[0.65]" : ""} ${partner.name === "Kora" ? "scale-[0.8]" : ""}`}
                         />
                     </div>
                 );
@@ -65,7 +65,7 @@ export default function Sponsors() {
                 <div className="flex flex-col items-center gap-20">
                     <div className="flex flex-col items-center">
                         <h3 className="font-medium text-[30px] text-[#989898] uppercase font-inter-display text-center mb-12">
-                            2025 SPONSORS
+                            PREVIOUS SPONSORS
                         </h3>
                         {renderLogos(sponsors)}
                     </div>

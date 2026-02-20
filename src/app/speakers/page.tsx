@@ -3,6 +3,7 @@
 import Container from "@/components/container";
 import NavBar from "@/components/nav-bar";
 import SpeakerCard from "@/components/Index/SpeakerCard";
+import Image from "next/image";
 import { useState } from "react";
 
 const hosts = [
@@ -201,10 +202,12 @@ export default function SpeakersPage() {
 
             <div className="absolute top-0 left-0 w-full h-[800px] pointer-events-none z-0">
                 <div className="relative w-full h-full">
-                    <img
+                    <Image
                         src="/bg.png"
                         alt="Hero Background"
-                        className="w-full h-full object-cover opacity-60"
+                        fill
+                        priority
+                        className="object-cover opacity-60"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0B0D13]/60 to-[#0B0D13]" />
                 </div>

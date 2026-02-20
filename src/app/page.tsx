@@ -19,7 +19,8 @@ export default function Home() {
     <main className="relative overflow-x-hidden">
       <div className="absolute left-0 right-0 -top-96 rounded-full blur-[250px] h-[1600px] w-[1600px] bg-[#4F46E5]/35 pointer-events-none -z-10" />
 
-      <div className="w-full relative bg-[url('/background.png')] flex flex-col min-h-screen bg-cover bg-center bg-no-repeat">
+      <div className="w-full relative flex flex-col min-h-screen">
+        <Image src="/background.png" alt="Hero Background" fill priority quality={100} className="object-cover object-center pointer-events-none -z-10" />
         <NavBar />
         <div className="my-auto h-full z-1 relative">
           <Container className="flex flex-col lg:flex-row items-center w-full my-auto h-full pt-32 lg:pt-0 pb-0 lg:pb-0">
@@ -34,7 +35,6 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col w-full mt-8">
-                  {/* Desktop/Tablet Buttons */}
                   <div className="hidden sm:flex flex-row items-center gap-4 w-full sm:w-auto">
                     <Button
                       variant="secondary"
@@ -48,7 +48,6 @@ export default function Home() {
                     </Button>
                   </div>
 
-                  {/* Mobile Button (Sponsor) */}
                   <a
                     href="https://airtable.com/appyNLSTr1sne7Mfe/pagQjxZAZab6n45MC/form"
                     target="_blank"
@@ -79,6 +78,7 @@ export default function Home() {
               alt="Background"
               width={1146}
               height={859}
+              priority
               className="block lg:hidden z-0 select-none mt-0 md:mt-10 w-[170%] -ml-[35%] max-w-none sm:w-[60%] sm:ml-auto sm:max-w-full relative pointer-events-none"
             />
           </Container>
@@ -102,6 +102,7 @@ export default function Home() {
             alt="Background"
             width={1146}
             height={859}
+            priority
             className="hidden lg:block z-0 select-none absolute bottom-0 right-0 mt-auto"
           />
         </Container>

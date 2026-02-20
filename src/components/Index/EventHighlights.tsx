@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Container from "../container";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function EventHighlights() {
   return (
@@ -10,15 +11,15 @@ export default function EventHighlights() {
       <div className="hidden lg:flex gap-12 items-center">
         <div className="flex flex-col gap-12 flex-1">
           <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image1.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image1.png" alt="Event highlight" fill className="object-cover" />
           </div>
           <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image3.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image3.png" alt="Event highlight" fill className="object-cover" />
           </div>
         </div>
         <div className="flex flex-col gap-12 flex-1">
           <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image8.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image8.png" alt="Event highlight" fill className="object-cover" />
           </div>
           <a
             href="https://youtu.be/9wDcD6T6OqY?si=kl6w3JSh_xCXWtCd"
@@ -55,16 +56,16 @@ export default function EventHighlights() {
             </Button>
           </a>
           <div className="mb-8 w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image7.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image7.png" alt="Event highlight" fill className="object-cover" />
           </div>
         </div>
 
         <div className="flex flex-col gap-12 flex-1">
           <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image9.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image9.png" alt="Event highlight" fill className="object-cover" />
           </div>
           <div className="w-full h-[420px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[12px] border-r-[12px] border-t-[12px] border-b-[50px] border-[#16181E] relative overflow-hidden">
-            <img src="/images/image6.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+            <Image src="/images/image6.png" alt="Event highlight" fill className="object-cover" />
           </div>
         </div>
       </div>
@@ -75,26 +76,26 @@ export default function EventHighlights() {
           {/* Left Column - Offset Down */}
           <div className="flex flex-col gap-4 mt-12">
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image1.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image1.png" alt="Event highlight" fill className="object-cover" />
             </div>
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image8.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image8.png" alt="Event highlight" fill className="object-cover" />
             </div>
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image9.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image9.png" alt="Event highlight" fill className="object-cover" />
             </div>
           </div>
 
           {/* Right Column - Starts Top */}
           <div className="flex flex-col gap-4">
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image3.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image3.png" alt="Event highlight" fill className="object-cover" />
             </div>
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image7.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image7.png" alt="Event highlight" fill className="object-cover" />
             </div>
             <div className="w-full h-[210px] bg-[#111319] shadow-[0px_0px_20px_4px_rgba(34,34,34,0.03)] border-l-[5px] border-r-[5px] border-t-[5px] border-b-[20px] border-[#16181E] relative overflow-hidden">
-              <img src="/images/image6.png" alt="Event highlight" className="absolute inset-0 w-full h-full object-cover" />
+              <Image src="/images/image6.png" alt="Event highlight" fill className="object-cover" />
             </div>
           </div>
         </div>
